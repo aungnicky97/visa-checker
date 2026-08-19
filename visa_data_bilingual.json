@@ -9,9 +9,9 @@
       "en": "Asia, Europe & North America",
       "my": "အာရှ၊ ဥရောပနှင့် မြောက်အမေရိက"
     },
-    "schema_version": "3.0",
+    "schema_version": "3.1",
     "last_updated": "2026-08-19",
-    "notes": "v1 dataset. visa_category is 'tourist' for all entries (other categories to be added later). Costs are indicative; fees in foreign currency are collected in local kyat at the mission's posted rate. Addresses and fees are best-effort and MUST be re-verified against official sources before publishing. Burmese wording is a first draft for native-speaker review."
+    "notes": "v1.1. Schengen consolidated into one entry (covers 29 countries). Search aliases added. Fund amounts are indicative and MUST be re-verified per country before publishing. visa_category is 'tourist' for all. Burmese wording is a first draft for native-speaker review."
   },
   "destinations": [
     {
@@ -43,8 +43,8 @@
           "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Proof of funds ~US$100/day of stay (bank statement or cash)",
+          "my": "ငွေကြေးအထောက်အထား တစ်ရက်လျှင် ~US$100 (ဘဏ်စာရင်း သို့မဟုတ် ငွেသား)"
         }
       ],
       "application": null,
@@ -87,8 +87,8 @@
           "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Proof of funds ~20,000 THB per person (~US$570) may be checked",
+          "my": "ငွေကြေးအထောက်အထား တစ်ဦးလျှင် ~၂၀,၀၀၀ ဘတ် (~US$570) စစ်ဆေးနိုင်"
         }
       ],
       "application": null,
@@ -127,8 +127,8 @@
           "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Proof of funds ~US$100/day recommended",
+          "my": "ငွေကြေးအထောက်အထား တစ်ရက်လျှင် ~US$100 အကြံပြု"
         }
       ],
       "application": null,
@@ -140,7 +140,11 @@
         "name": "Vietnam Immigration Department",
         "url": "https://evisa.gov.vn/"
       },
-      "last_verified": "2026-08-19"
+      "last_verified": "2026-08-19",
+      "aliases": [
+        "vietnam",
+        "viet nam"
+      ]
     },
     {
       "country_code": "MY",
@@ -171,8 +175,8 @@
           "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Proof of funds ~US$100/day (bank statement or cash)",
+          "my": "ငွေကြေးအထောက်အထား တစ်ရက်လျှင် ~US$100"
         }
       ],
       "application": null,
@@ -211,8 +215,8 @@
           "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Proof of funds ~US$100/day recommended",
+          "my": "ငွေကြေးအထောက်အထား တစ်ရက်လျှင် ~US$100 အကြံပြု"
         }
       ],
       "application": null,
@@ -251,8 +255,8 @@
           "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Proof of funds ~US$100/day of stay",
+          "my": "ငွေကြေးအထောက်အထား တစ်ရက်လျှင် ~US$100"
         }
       ],
       "application": null,
@@ -264,7 +268,12 @@
         "name": "Philippine Bureau of Immigration",
         "url": "https://immigration.gov.ph/"
       },
-      "last_verified": "2026-08-19"
+      "last_verified": "2026-08-19",
+      "aliases": [
+        "philippines",
+        "the philippines",
+        "pinas"
+      ]
     },
     {
       "country_code": "LA",
@@ -291,8 +300,8 @@
           "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Proof of funds ~US$100/day recommended",
+          "my": "ငွေကြေးအထောက်အထား တစ်ရက်လျှင် ~US$100 အကြံပြု"
         }
       ],
       "application": null,
@@ -304,7 +313,11 @@
         "name": "Lao Immigration Department",
         "url": "https://laoevisa.gov.la/"
       },
-      "last_verified": "2026-08-19"
+      "last_verified": "2026-08-19",
+      "aliases": [
+        "laos",
+        "lao"
+      ]
     },
     {
       "country_code": "KH",
@@ -331,8 +344,8 @@
           "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Proof of funds ~US$100/day recommended",
+          "my": "ငွေကြေးအထောက်အထား တစ်ရက်လျှင် ~US$100 အကြံပြု"
         }
       ],
       "application": null,
@@ -371,8 +384,8 @@
           "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Proof of funds ~US$100/day recommended",
+          "my": "ငွေကြေးအထောက်အထား တစ်ရက်လျှင် ~US$100 အကြံပြု"
         }
       ],
       "application": null,
@@ -411,8 +424,8 @@
           "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
         },
         {
-          "en": "Bank statement / proof of funds",
-          "my": "ဘဏ်စာရင်း / ငွေကြေးအထောက်အထား"
+          "en": "Bank statement showing ~US$100/day of stay",
+          "my": "တစ်ရက်လျှင် ~US$100 ပြသသော ဘဏ်စာရင်း"
         },
         {
           "en": "Income tax returns",
@@ -469,8 +482,8 @@
           "my": "ဖြည့်စွက်ပြီး လျှောက်လွှာနှင့် ပတ်စပို့ဓာတ်ပုံ"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Bank statement showing ~US$100/day (min ~US$3,000 balance advised)",
+          "my": "တစ်ရက်လျှင် ~US$100 ပြသသော ဘဏ်စာရင်း (လက်ကျန် ~US$3,000 အကြံပြု)"
         },
         {
           "en": "Travel itinerary, flight and hotel bookings",
@@ -495,7 +508,13 @@
         "name": "Embassy of the Republic of Korea, Yangon",
         "url": "https://overseas.mofa.go.kr/mm-en/index.do"
       },
-      "last_verified": "2026-08-19"
+      "last_verified": "2026-08-19",
+      "aliases": [
+        "korea",
+        "south korea",
+        "s korea",
+        "republic of korea"
+      ]
     },
     {
       "country_code": "TW",
@@ -576,8 +595,8 @@
           "my": "ဖြည့်စွက်ပြီး လျှောက်လွှာနှင့် ပတ်စပို့ဓာတ်ပုံ"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Bank statement showing ~US$100/day of stay (last 3 months)",
+          "my": "တစ်ရက်လျှင် ~US$100 ပြသသော ဘဏ်စာရင်း (နောက်ဆုံး ၃ လ)"
         },
         {
           "en": "Travel itinerary, flight and hotel bookings",
@@ -602,7 +621,12 @@
         "name": "Chinese Visa Application Service Center",
         "url": "https://bio.visaforchina.cn/"
       },
-      "last_verified": "2026-08-19"
+      "last_verified": "2026-08-19",
+      "aliases": [
+        "china",
+        "prc",
+        "mainland china"
+      ]
     },
     {
       "country_code": "MO",
@@ -690,8 +714,8 @@
           "my": "ဗီဇာအင်တာဗျူး ချိန်းဆိုမှု"
         },
         {
-          "en": "Proof of funds and ties to Myanmar",
-          "my": "ငွေကြေးနှင့် မြန်မာနှင့်ဆက်နွှယ်မှု အထောက်အထား"
+          "en": "Proof of funds & strong ties to Myanmar (job, family, property)",
+          "my": "ငွေကြေးနှင့် မြန်မာနှင့် ခိုင်မာသောဆက်နွှယ်မှု (အလုပ်၊ မိသားစု၊ ပစ္စည်း)"
         }
       ],
       "application": {
@@ -712,413 +736,110 @@
         "name": "U.S. Embassy in Myanmar",
         "url": "https://mm.usembassy.gov/visas/"
       },
+      "last_verified": "2026-08-19",
+      "aliases": [
+        "usa",
+        "united states",
+        "united states of america",
+        "america",
+        "u.s.",
+        "u.s.a"
+      ]
+    },
+    {
+      "country_code": "SCHENGEN",
+      "country_name": {
+        "en": "Europe (Schengen Area)",
+        "my": "ဥရောပ (Schengen ဧရိယာ)"
+      },
+      "aliases": [
+        "schengen",
+        "europe",
+        "eu",
+        "france",
+        "germany",
+        "italy",
+        "spain",
+        "netherlands",
+        "switzerland",
+        "greece",
+        "austria",
+        "belgium",
+        "portugal",
+        "poland",
+        "sweden",
+        "norway",
+        "denmark",
+        "finland",
+        "czech",
+        "hungary",
+        "croatia",
+        "switzerland",
+        "european union"
+      ],
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "sub_type": "schengen_type_c",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 98,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Schengen short-stay (Type C) visa fee ~€90 (≈ US$98). One visa covers all 29 countries for up to 90 days in any 180-day period. VFS service fees may apply.",
+          "my": "Schengen ရေတို (Type C) ဗီဇာကြေး ~€90 (≈ US$98)။ ဗီဇာတစ်ခုဖြင့် နိုင်ငံ ၂၉ ခုလုံး ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ။ VFS ဝန်ဆောင်ခ ရှိနိုင်။"
+        }
+      },
+      "covers_note": {
+        "en": "One Schengen visa covers all 29 countries: Austria, Belgium, Bulgaria, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland.",
+        "my": "Schengen ဗီဇာတစ်ခုဖြင့် နိုင်ငံ ၂၉ ခုလုံး: Austria, Belgium, Bulgaria, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland။"
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay, 2 blank pages",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့၊ ကွက်လပ် ၂ မျက်နှာ"
+        },
+        {
+          "en": "Schengen visa application form + biometric photo",
+          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဇီဝမက်ထရစ်ဓာတ်ပုံ"
+        },
+        {
+          "en": "Travel medical insurance, min €30,000 coverage",
+          "my": "ခရီးသွားဆေးဘက်အာမခံ၊ အနည်းဆုံး €၃၀,၀၀၀ အကာအကွယ်"
+        },
+        {
+          "en": "Bank statement showing ~€60/day of stay (last 3 months)",
+          "my": "တစ်ရက်လျှင် ~€60 ပြသသော ဘဏ်စာရင်း (နောက်ဆုံး ၃ လ)"
+        },
+        {
+          "en": "Round-trip flight reservation + hotel bookings",
+          "my": "အသွားအပြန် လေယာဉ်ကြိုတင်မှာယူမှုနှင့် ဟိုတယ်ကြိုတင်မှာယူမှု"
+        },
+        {
+          "en": "Cover letter explaining trip purpose and dates",
+          "my": "ခရီးရည်ရွယ်ချက်နှင့် ရက်စွဲရှင်းပြသော အကြောင်းကြားစာ"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Embassy or VFS Global of your MAIN destination country, Yangon",
+          "my": "သင့်အဓိကသွားရောက်မည့်နိုင်ငံ၏ သံရုံး သို့မဟုတ် VFS Global၊ ရန်ကုန်"
+        },
+        "address": "Apply at the embassy/VFS of the country where you'll spend the most time (or first entry). Most route through VFS Global Yangon.",
+        "hours": null,
+        "map_url": null,
+        "apply_url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
+      },
+      "notes": {
+        "en": "A Schengen visa is required. Apply at the embassy/VFS of your main destination (where you'll spend the most nights). One visa grants access to all 29 Schengen countries. Note: UK and Ireland are NOT in Schengen and need separate visas. ETIAS (a separate €20 authorization) is expected to launch later.",
+        "my": "Schengen ဗီဇာ လိုအပ်သည်။ သင့်အဓိကသွားရောက်မည့်နိုင်ငံ (ညအများဆုံးနေမည့်) ၏ သံရုံး/VFS တွင် လျှောက်ထားပါ။ ဗီဇာတစ်ခုဖြင့် Schengen နိုင်ငံ ၂၉ ခုလုံး ဝင်ရောက်နိုင်။ မှတ်ချက်: ယူကေနှင့် အိုင်ယာလန်သည် Schengen တွင်မပါ၊ သီးခြားဗီဇာလို။"
+      },
+      "source": {
+        "name": "European Commission — Schengen visa policy",
+        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
+      },
       "last_verified": "2026-08-19"
-    },
-    {
-      "country_code": "FR",
-      "country_name": {
-        "en": "France",
-        "my": "ပြင်သစ်"
-      },
-      "visa_type": "visa_required",
-      "visa_category": "tourist",
-      "allowed_stay_days": 90,
-      "cost": {
-        "required": true,
-        "amount_usd": 98,
-        "local_currency": "MMK",
-        "amount_local": null,
-        "note": {
-          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
-          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
-        }
-      },
-      "extra_requirements": [
-        {
-          "en": "Passport valid 6 months beyond stay",
-          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
-        },
-        {
-          "en": "Schengen visa application + photo",
-          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
-        },
-        {
-          "en": "Travel medical insurance (min €30,000)",
-          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
-        },
-        {
-          "en": "Flight + hotel bookings, proof of funds",
-          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
-        }
-      ],
-      "application": {
-        "channel": {
-          "en": "Relevant embassy / VFS Global, Yangon",
-          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
-        },
-        "address": "Apply via the destination country's embassy or VFS in Yangon",
-        "hours": null,
-        "map_url": null,
-        "apply_url": null
-      },
-      "notes": {
-        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
-        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
-      },
-      "source": {
-        "name": "European Commission — Schengen visa info",
-        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
-      },
-      "last_verified": "2026-08-19",
-      "sub_type": "schengen_type_c"
-    },
-    {
-      "country_code": "DE",
-      "country_name": {
-        "en": "Germany",
-        "my": "ဂျာမနီ"
-      },
-      "visa_type": "visa_required",
-      "visa_category": "tourist",
-      "allowed_stay_days": 90,
-      "cost": {
-        "required": true,
-        "amount_usd": 98,
-        "local_currency": "MMK",
-        "amount_local": null,
-        "note": {
-          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
-          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
-        }
-      },
-      "extra_requirements": [
-        {
-          "en": "Passport valid 6 months beyond stay",
-          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
-        },
-        {
-          "en": "Schengen visa application + photo",
-          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
-        },
-        {
-          "en": "Travel medical insurance (min €30,000)",
-          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
-        },
-        {
-          "en": "Flight + hotel bookings, proof of funds",
-          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
-        }
-      ],
-      "application": {
-        "channel": {
-          "en": "Relevant embassy / VFS Global, Yangon",
-          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
-        },
-        "address": "Apply via the destination country's embassy or VFS in Yangon",
-        "hours": null,
-        "map_url": null,
-        "apply_url": null
-      },
-      "notes": {
-        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
-        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
-      },
-      "source": {
-        "name": "European Commission — Schengen visa info",
-        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
-      },
-      "last_verified": "2026-08-19",
-      "sub_type": "schengen_type_c"
-    },
-    {
-      "country_code": "IT",
-      "country_name": {
-        "en": "Italy",
-        "my": "အီတလီ"
-      },
-      "visa_type": "visa_required",
-      "visa_category": "tourist",
-      "allowed_stay_days": 90,
-      "cost": {
-        "required": true,
-        "amount_usd": 98,
-        "local_currency": "MMK",
-        "amount_local": null,
-        "note": {
-          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
-          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
-        }
-      },
-      "extra_requirements": [
-        {
-          "en": "Passport valid 6 months beyond stay",
-          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
-        },
-        {
-          "en": "Schengen visa application + photo",
-          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
-        },
-        {
-          "en": "Travel medical insurance (min €30,000)",
-          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
-        },
-        {
-          "en": "Flight + hotel bookings, proof of funds",
-          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
-        }
-      ],
-      "application": {
-        "channel": {
-          "en": "Relevant embassy / VFS Global, Yangon",
-          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
-        },
-        "address": "Apply via the destination country's embassy or VFS in Yangon",
-        "hours": null,
-        "map_url": null,
-        "apply_url": null
-      },
-      "notes": {
-        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
-        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
-      },
-      "source": {
-        "name": "European Commission — Schengen visa info",
-        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
-      },
-      "last_verified": "2026-08-19",
-      "sub_type": "schengen_type_c"
-    },
-    {
-      "country_code": "ES",
-      "country_name": {
-        "en": "Spain",
-        "my": "စပိန်"
-      },
-      "visa_type": "visa_required",
-      "visa_category": "tourist",
-      "allowed_stay_days": 90,
-      "cost": {
-        "required": true,
-        "amount_usd": 98,
-        "local_currency": "MMK",
-        "amount_local": null,
-        "note": {
-          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
-          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
-        }
-      },
-      "extra_requirements": [
-        {
-          "en": "Passport valid 6 months beyond stay",
-          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
-        },
-        {
-          "en": "Schengen visa application + photo",
-          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
-        },
-        {
-          "en": "Travel medical insurance (min €30,000)",
-          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
-        },
-        {
-          "en": "Flight + hotel bookings, proof of funds",
-          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
-        }
-      ],
-      "application": {
-        "channel": {
-          "en": "Relevant embassy / VFS Global, Yangon",
-          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
-        },
-        "address": "Apply via the destination country's embassy or VFS in Yangon",
-        "hours": null,
-        "map_url": null,
-        "apply_url": null
-      },
-      "notes": {
-        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
-        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
-      },
-      "source": {
-        "name": "European Commission — Schengen visa info",
-        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
-      },
-      "last_verified": "2026-08-19",
-      "sub_type": "schengen_type_c"
-    },
-    {
-      "country_code": "NL",
-      "country_name": {
-        "en": "Netherlands",
-        "my": "နယ်သာလန်"
-      },
-      "visa_type": "visa_required",
-      "visa_category": "tourist",
-      "allowed_stay_days": 90,
-      "cost": {
-        "required": true,
-        "amount_usd": 98,
-        "local_currency": "MMK",
-        "amount_local": null,
-        "note": {
-          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
-          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
-        }
-      },
-      "extra_requirements": [
-        {
-          "en": "Passport valid 6 months beyond stay",
-          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
-        },
-        {
-          "en": "Schengen visa application + photo",
-          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
-        },
-        {
-          "en": "Travel medical insurance (min €30,000)",
-          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
-        },
-        {
-          "en": "Flight + hotel bookings, proof of funds",
-          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
-        }
-      ],
-      "application": {
-        "channel": {
-          "en": "Relevant embassy / VFS Global, Yangon",
-          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
-        },
-        "address": "Apply via the destination country's embassy or VFS in Yangon",
-        "hours": null,
-        "map_url": null,
-        "apply_url": null
-      },
-      "notes": {
-        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
-        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
-      },
-      "source": {
-        "name": "European Commission — Schengen visa info",
-        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
-      },
-      "last_verified": "2026-08-19",
-      "sub_type": "schengen_type_c"
-    },
-    {
-      "country_code": "CH",
-      "country_name": {
-        "en": "Switzerland",
-        "my": "ဆွစ်ဇာလန်"
-      },
-      "visa_type": "visa_required",
-      "visa_category": "tourist",
-      "allowed_stay_days": 90,
-      "cost": {
-        "required": true,
-        "amount_usd": 98,
-        "local_currency": "MMK",
-        "amount_local": null,
-        "note": {
-          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
-          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
-        }
-      },
-      "extra_requirements": [
-        {
-          "en": "Passport valid 6 months beyond stay",
-          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
-        },
-        {
-          "en": "Schengen visa application + photo",
-          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
-        },
-        {
-          "en": "Travel medical insurance (min €30,000)",
-          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
-        },
-        {
-          "en": "Flight + hotel bookings, proof of funds",
-          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
-        }
-      ],
-      "application": {
-        "channel": {
-          "en": "Relevant embassy / VFS Global, Yangon",
-          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
-        },
-        "address": "Apply via the destination country's embassy or VFS in Yangon",
-        "hours": null,
-        "map_url": null,
-        "apply_url": null
-      },
-      "notes": {
-        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
-        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
-      },
-      "source": {
-        "name": "European Commission — Schengen visa info",
-        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
-      },
-      "last_verified": "2026-08-19",
-      "sub_type": "schengen_type_c"
-    },
-    {
-      "country_code": "GR",
-      "country_name": {
-        "en": "Greece",
-        "my": "ဂရိ"
-      },
-      "visa_type": "visa_required",
-      "visa_category": "tourist",
-      "allowed_stay_days": 90,
-      "cost": {
-        "required": true,
-        "amount_usd": 98,
-        "local_currency": "MMK",
-        "amount_local": null,
-        "note": {
-          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
-          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
-        }
-      },
-      "extra_requirements": [
-        {
-          "en": "Passport valid 6 months beyond stay",
-          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
-        },
-        {
-          "en": "Schengen visa application + photo",
-          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
-        },
-        {
-          "en": "Travel medical insurance (min €30,000)",
-          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
-        },
-        {
-          "en": "Flight + hotel bookings, proof of funds",
-          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
-        }
-      ],
-      "application": {
-        "channel": {
-          "en": "Relevant embassy / VFS Global, Yangon",
-          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
-        },
-        "address": "Apply via the destination country's embassy or VFS in Yangon",
-        "hours": null,
-        "map_url": null,
-        "apply_url": null
-      },
-      "notes": {
-        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
-        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
-      },
-      "source": {
-        "name": "European Commission — Schengen visa info",
-        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
-      },
-      "last_verified": "2026-08-19",
-      "sub_type": "schengen_type_c"
     },
     {
       "country_code": "GB",
@@ -1149,8 +870,8 @@
           "my": "ဖြည့်စွက်ပြီး လျှောက်လွှာနှင့် ပတ်စပို့ဓာတ်ပုံ"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Bank statement showing ~£100/day (last 6 months)",
+          "my": "တစ်ရက်လျှင် ~£100 ပြသသော ဘဏ်စာရင်း (နောက်ဆုံး ၆ လ)"
         },
         {
           "en": "Travel itinerary, flight and hotel bookings",
@@ -1176,7 +897,14 @@
         "url": "https://www.gov.uk/standard-visitor"
       },
       "last_verified": "2026-08-19",
-      "sub_type": "standard_visitor"
+      "sub_type": "standard_visitor",
+      "aliases": [
+        "uk",
+        "united kingdom",
+        "britain",
+        "great britain",
+        "england"
+      ]
     },
     {
       "country_code": "AL",
@@ -1256,8 +984,8 @@
           "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
         },
         {
-          "en": "Proof of sufficient funds",
-          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Proof of funds ~US$50/day recommended",
+          "my": "ငွေကြေးအထောက်အထား တစ်ရက်လျှင် ~US$50 အကြံပြု"
         }
       ],
       "application": null,
@@ -1269,7 +997,11 @@
         "name": "Myanmar Ministry of Information / Russian MFA",
         "url": "https://www.moi.gov.mm/moi:eng/news/20107"
       },
-      "last_verified": "2026-08-19"
+      "last_verified": "2026-08-19",
+      "aliases": [
+        "russia",
+        "russian federation"
+      ]
     }
   ]
 }
