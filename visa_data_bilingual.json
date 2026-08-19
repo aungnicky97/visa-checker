@@ -10,7 +10,7 @@
       "my": "အာရှ"
     },
     "schema_version": "2.0",
-    "last_updated": "2026-08-18",
+    "last_updated": "2026-08-19",
     "notes": "Translatable fields use {en, my}. Burmese immigration wording is a first draft and should be reviewed by a native speaker before publishing."
   },
   "destinations": [
@@ -130,6 +130,141 @@
         "url": "https://www.mm.emb-japan.go.jp/itpr_en/consular_en.html"
       },
       "last_verified": "2026-08-18"
+    },
+    {
+      "country_code": "KR",
+      "country_name": {
+        "en": "South Korea",
+        "my": "တောင်ကိုရီးယား"
+      },
+      "visa_type": "visa_required",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 50,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Approximate consular fee for a single-entry short-term (C-3) tourist visa. Paid at application. K-ETA does NOT apply to Myanmar passport holders — a full visa is required.",
+          "my": "တစ်ကြိမ်ဝင် ရေတိုခရီးသွား (C-3) ဗီဇာအတွက် ခန့်မှန်းကွန်ဆူလာကြေး။ လျှောက်ထားချိန်တွင် ပေးရသည်။ K-ETA သည် မြန်မာပတ်စပို့ကိုင်ဆောင်သူများအတွက် အသုံးမပြုနိုင်ပါ — ဗီဇာ အပြည့်အဝ လိုအပ်သည်။"
+        }
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Completed visa application form + passport photo",
+          "my": "ဖြည့်စွက်ပြီး ဗီဇာလျှောက်လွှာနှင့် ပတ်စပို့ဓာတ်ပုံ"
+        },
+        {
+          "en": "Proof of funds (bank statement)",
+          "my": "ငွေကြေးအထောက်အထား (ဘဏ်စာရင်းရှင်းတမ်း)"
+        },
+        {
+          "en": "Travel itinerary, flight and hotel bookings",
+          "my": "ခရီးစဉ်အစီအစဉ်၊ လေယာဉ်နှင့် ဟိုတယ်ကြိုတင်မှာယူမှု"
+        },
+        {
+          "en": "Biometric enrollment at VFS Global Yangon",
+          "my": "VFS Global ရန်ကုန်တွင် ဇီဝမက်ထရစ် စာရင်းသွင်းခြင်း"
+        }
+      ],
+      "notes": {
+        "en": "A visa is required. Apply at the Embassy of the Republic of Korea in Yangon or via VFS Global Yangon (biometrics). Start online at visa.mofa.go.kr. Processing about 5-7 business days.",
+        "my": "ဗီဇာလိုအပ်သည်။ ရန်ကုန်ရှိ ကိုရီးယားသမ္မတနိုင်ငံသံရုံး သို့မဟုတ် VFS Global ရန်ကုန် (ဇီဝမက်ထရစ်) မှတစ်ဆင့် လျှောက်ထားပါ။ visa.mofa.go.kr တွင် အွန်လိုင်းစတင်ပါ။ ဆောင်ရွက်ချိန် ရုံးဖွင့်ရက် ၅-၇ ရက်ခန့်။"
+      },
+      "source": {
+        "name": "Embassy of the Republic of Korea, Yangon / VFS Global",
+        "url": "https://overseas.mofa.go.kr/mm-en/index.do"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "TW",
+      "country_name": {
+        "en": "Taiwan",
+        "my": "ထိုင်ဝမ်"
+      },
+      "visa_type": "visa_required",
+      "sub_type": "conditional_authorization",
+      "allowed_stay_days": 14,
+      "cost": {
+        "required": true,
+        "amount_usd": 50,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "TWO PATHS. (1) FREE online Travel Authorization Certificate (TAC) for a 14-day stay — ONLY if you hold a valid or recently-expired (within 10 years) visa or residence permit from the US, Canada, UK, EU/Schengen, Australia, New Zealand, Japan, or South Korea. (2) If you do NOT qualify, a paid visitor visa from TETO is required (~$50, sticker visa). USD figure refers to the paid visa path.",
+          "my": "လမ်းကြောင်း ၂ ခု။ (၁) ရက် ၁၄ ရက်နေထိုင်ရန် အခမဲ့ အွန်လိုင်း Travel Authorization Certificate (TAC) — အမေရိကန်၊ ကနေဒါ၊ UK၊ EU/Schengen၊ ဩစတြေးလျ၊ နယူးဇီလန်၊ ဂျပန် သို့မဟုတ် တောင်ကိုရီးယားမှ တရားဝင် သို့မဟုတ် (၁၀ နှစ်အတွင်း) သက်တမ်းကုန်ဆုံးထားသော ဗီဇာ/နေထိုင်ခွင့် ရှိမှသာ။ (၂) အရည်အချင်းမပြည့်မီပါက TETO မှ အခပေးဗီဇာ လိုအပ်သည် (~$50)။ USD ပမာဏသည် အခပေးဗီဇာလမ်းကြောင်းကို ရည်ညွှန်းသည်။"
+        }
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay, 2 blank pages",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့၊ ကွက်လပ် ၂ မျက်နှာ"
+        },
+        {
+          "en": "For free TAC: qualifying visa/residence from US, CA, UK, EU/Schengen, AU, NZ, JP, or KR",
+          "my": "အခမဲ့ TAC အတွက်: US၊ CA၊ UK၊ EU/Schengen၊ AU၊ NZ၊ JP သို့မဟုတ် KR မှ အရည်အချင်းပြည့်မီသော ဗီဇာ/နေထိုင်ခွင့်"
+        },
+        {
+          "en": "Recent digital passport photo",
+          "my": "မကြာသေးမီက ဒစ်ဂျစ်တယ် ပတ်စပို့ဓာတ်ပုံ"
+        },
+        {
+          "en": "For paid visa: apply at TETO (Taipei Economic and Trade Office)",
+          "my": "အခပေးဗီဇာအတွက်: TETO (Taipei Economic and Trade Office) တွင် လျှောက်ထားပါ"
+        }
+      ],
+      "notes": {
+        "en": "Most Myanmar travelers need either a TAC or a visa. The free online TAC (14 days, multiple entry within 90-day validity) is available only if you hold a qualifying visa/residence permit from a designated developed country. Otherwise apply for a paid visitor visa at TETO. Always confirm eligibility on the official BOCA website.",
+        "my": "မြန်မာခရီးသွားအများစုသည် TAC သို့မဟုတ် ဗီဇာ တစ်ခုခု လိုအပ်သည်။ အခမဲ့ အွန်လိုင်း TAC (ရက် ၁၄ ရက်၊ ရက် ၉၀ သက်တမ်းအတွင်း အကြိမ်များဝင်) သည် သတ်မှတ်ထားသော ဖွံ့ဖြိုးပြီးနိုင်ငံမှ အရည်အချင်းပြည့်မီသော ဗီဇာ/နေထိုင်ခွင့် ရှိမှသာ ရရှိနိုင်သည်။ မဟုတ်ပါက TETO တွင် အခပေးဗီဇာ လျှောက်ထားပါ။ တရားဝင် BOCA ဝဘ်ဆိုက်တွင် အရည်အချင်းကို အမြဲအတည်ပြုပါ။"
+      },
+      "source": {
+        "name": "Bureau of Consular Affairs, Taiwan (BOCA) / National Immigration Agency",
+        "url": "https://www.boca.gov.tw/np-152-2.html"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "RU",
+      "country_name": {
+        "en": "Russia",
+        "my": "ရုရှား"
+      },
+      "visa_type": "visa_free",
+      "allowed_stay_days": 30,
+      "cost": {
+        "required": false,
+        "amount_usd": 0,
+        "local_currency": null,
+        "amount_local": 0
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Proof of onward/return travel",
+          "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
+        },
+        {
+          "en": "For tourism only — not for study, work, or residency",
+          "my": "ခရီးသွားအတွက်သာ — ပညာသင်၊ အလုပ် သို့မဟုတ် အခြေချနေထိုင်ရန် မဟုတ်ပါ"
+        }
+      ],
+      "notes": {
+        "en": "Visa-free for up to 30 days under the Russia-Myanmar mutual visa exemption agreement, effective 27 January 2026. Applies to ordinary passport holders for tourism. Does not cover study, work, or permanent residency — those still require a visa. (A separate Russian e-visa also exists but the visa-free agreement covers short tourism.)",
+        "my": "ရုရှား-မြန်မာ အပြန်အလှန်ဗီဇာကင်းလွတ်ခွင့် သဘောတူညီချက်အရ ရက် ၃၀ အထိ ဗီဇာမလို၊ ၂၀၂၆ ဇန်နဝါရီ ၂၇ မှ စတင်အကျုံးဝင်သည်။ သာမန်ပတ်စပို့ကိုင်ဆောင်သူများ ခရီးသွားအတွက် သက်ဆိုင်သည်။ ပညာသင်၊ အလုပ် သို့မဟုတ် အမြဲတမ်းနေထိုင်ခွင့်အတွက် မအကျုံးဝင်ပါ — ၎င်းတို့သည် ဗီဇာ လိုအပ်သေးသည်။"
+      },
+      "source": {
+        "name": "Myanmar Ministry of Information / Russian Ministry of Foreign Affairs",
+        "url": "https://www.moi.gov.mm/moi:eng/news/20107"
+      },
+      "last_verified": "2026-08-19"
     }
   ]
 }
