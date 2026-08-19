@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)file:///Users/nickaung/Downloads/visa-checker.html -->
+<html lang="en" data-lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do I need a visa? — Myanmar passport</title>
+<style>
+  :root {
+    --ink: #1a2238; --ink-soft: #3a4468; --paper: #f5f3ee; --gold: #d4a017;
+    --go: #2f7d5b; --go-bg: #e3f0e9; --caution: #c07a1e; --caution-bg: #f6ecd9;
+    --stop: #b23b3b; --stop-bg: #f5e2e0; --line: #d9d4c7;
+    --shadow: 0 1px 2px rgba(26,34,56,.06), 0 8px 28px rgba(26,34,56,.08);
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5; min-height: 100vh; }
+  html[data-lang="my"] body {
+    font-family: "Padauk", "Myanmar Text", "Noto Sans Myanmar", ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.8; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 40px 20px 80px; }
+  .topbar { display: flex; justify-content: flex-end; margin-bottom: 20px; }
+  .lang-toggle { display: inline-flex; border: 1.5px solid var(--line); border-radius: 999px; overflow: hidden; background: #fff; }
+  .lang-toggle button { border: 0; background: transparent; padding: 7px 16px; font-size: 14px;
+    color: var(--ink-soft); cursor: pointer; font-weight: 600;
+    font-family: "Padauk", "Myanmar Text", "Noto Sans Myanmar", inherit; }
+  .lang-toggle button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+  .lang-toggle button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  header { margin-bottom: 28px; }
+  .eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; margin: 0 0 10px; }
+  html[data-lang="my"] .eyebrow { letter-spacing: normal; text-transform: none; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(30px, 6vw, 44px); line-height: 1.05; margin: 0 0 8px; font-weight: 700; letter-spacing: -.01em; }
+  html[data-lang="my"] h1 { font-family: "Padauk", "Myanmar Text", "Noto Sans Myanmar", serif; line-height: 1.4; }
+  h1 .gold { color: var(--gold); }
+  .sub { color: var(--ink-soft); font-size: 15px; margin: 0; max-width: 52ch; }
+  .search { position: relative; margin: 26px 0 8px; }
+  #q { width: 100%; padding: 16px 18px; font-size: 17px; border: 1.5px solid var(--line); border-radius: 12px;
+    background: #fff; color: var(--ink); outline: none; font-family: inherit;
+    transition: border-color .15s, box-shadow .15s; }
+  #q:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(212,160,23,.16); }
+  #q::placeholder { color: #a6a08f; }
+  .hint { font-size: 13px; color: var(--ink-soft); margin: 6px 2px 0; }
+  .hint b { color: var(--ink); font-weight: 600; cursor: pointer; border-bottom: 1px dotted var(--ink-soft); }
+  .results { margin-top: 22px; display: flex; flex-direction: column; gap: 14px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); overflow: hidden; border-left: 5px solid var(--line); }
+  .card.go { border-left-color: var(--go); }
+  .card.caution { border-left-color: var(--caution); }
+  .card.stop { border-left-color: var(--stop); }
+  .card-top { padding: 18px 20px 14px; }
+  .card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+  .country { font-size: 22px; font-weight: 700; margin: 0; font-family: Georgia, serif; }
+  html[data-lang="my"] .country { font-family: "Padauk", "Myanmar Text", "Noto Sans Myanmar", serif; }
+  .stay { font-size: 13px; color: var(--ink-soft); white-space: nowrap; }
+  .badge { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 600; padding: 5px 11px; border-radius: 999px; margin-top: 10px; }
+  .badge .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .badge.go { background: var(--go-bg); color: var(--go); } .badge.go .dot { background: var(--go); }
+  .badge.caution { background: var(--caution-bg); color: var(--caution); } .badge.caution .dot { background: var(--caution); }
+  .badge.stop { background: var(--stop-bg); color: var(--stop); } .badge.stop .dot { background: var(--stop); }
+  .cost-row { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; padding: 14px 20px; background: var(--paper); border-top: 1px solid var(--line); }
+  .cost-primary { font-size: 20px; font-weight: 700; }
+  .cost-primary.free { color: var(--go); }
+  .cost-secondary { font-size: 14px; color: var(--ink-soft); }
+  .cost-caveat { font-size: 12px; color: var(--ink-soft); width: 100%; margin-top: 2px; font-style: italic; }
+  details { border-top: 1px solid var(--line); }
+  summary { padding: 12px 20px; cursor: pointer; font-size: 13px; font-weight: 600; color: var(--ink-soft); list-style: none; user-select: none; display: flex; justify-content: space-between; align-items: center; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; font-size: 16px; color: var(--gold); }
+  details[open] summary::after { content: "\2013"; }
+  .detail-body { padding: 0 20px 18px; font-size: 14px; }
+  .detail-body ul { margin: 0 0 12px; padding-left: 18px; }
+  .detail-body li { margin: 3px 0; color: var(--ink-soft); }
+  .detail-body .note { color: var(--ink); margin: 0 0 12px; }
+  .src { font-size: 12px; color: var(--ink-soft); }
+  .src a { color: var(--ink); }
+  .empty, .prompt { text-align: center; padding: 40px 20px; color: var(--ink-soft); }
+  .prompt .big { font-size: 15px; }
+  .verified { font-size: 12px; color: var(--ink-soft); margin-top: 10px; }
+  footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12px; color: var(--ink-soft); }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button id="lang-en" aria-pressed="true">EN</button>
+      <button id="lang-my" aria-pressed="false">မြန်မာ</button>
+    </div>
+  </div>
+  <header>
+    <p class="eyebrow" id="ui-eyebrow">Myanmar (Burma) passport</p>
+    <h1 id="ui-h1">Do I need a <span class="gold">visa?</span></h1>
+    <p class="sub" id="ui-sub">Type a country to see the visa type, how long you can stay, and what it costs — in one look.</p>
+  </header>
+  <div class="search"><input id="q" type="text" autocomplete="off" autofocus="" placeholder="Try “Japan” or “Singapore”…"></div>
+  <p class="hint"><span id="ui-quick">Quick check:</span> <b data-fill-en="Singapore" data-fill-my="စင်္ကာပူ">Singapore</b> &nbsp;·&nbsp; <b data-fill-en="Japan" data-fill-my="ဂျပန်">Japan</b></p>
+  <div class="results" id="results"><div class="prompt"><p class="big">Start typing a country name above.</p><p class="verified">2 countries in this list · Asia · updated 2026-08-18</p></div></div>
+  <footer id="ui-footer">Costs are indicative. Fees set in a foreign currency are collected in local kyat at the mission’s posted daily rate, so amounts vary. Always confirm with the official source before you travel.</footer>
+</div>
+<script>
+const DATASET = {"meta": {"passport": "MM", "passport_name": {"en": "Myanmar (Burma)", "my": "မြန်မာ"}, "region": {"en": "Asia", "my": "အာရှ"}, "schema_version": "2.0", "last_updated": "2026-08-18", "notes": "Translatable fields use {en, my}. Burmese immigration wording is a first draft and should be reviewed by a native speaker before publishing."}, "destinations": [{"country_code": "SG", "country_name": {"en": "Singapore", "my": "စင်္ကာပူ"}, "visa_type": "visa_free", "allowed_stay_days": 30, "cost": {"required": false, "amount_usd": 0, "local_currency": null, "amount_local": 0}, "extra_requirements": [{"en": "Passport valid 6 months beyond stay", "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"}, {"en": "SG Arrival Card (SGAC) must be submitted online before arrival (free)", "my": "မရောက်မီ SG Arrival Card (SGAC) ကို အွန်လိုင်းတွင် တင်ရမည် (အခမဲ့)"}, {"en": "Proof of onward travel and sufficient funds", "my": "ဆက်လက်ခရီးသွားမည့် အထောက်အထားနှင့် လုံလောက်သော ငွေကြေးအထောက်အထား"}], "notes": {"en": "Visa-free for up to 30 days. The SG Arrival Card is a mandatory online declaration, not a visa, and is free.", "my": "ရက် ၃၀ အထိ ဗီဇာမလို။ SG Arrival Card သည် မဖြစ်မနေ တင်ရသော အွန်လိုင်းကြေညာချက်ဖြစ်ပြီး ဗီဇာမဟုတ်ပါ၊ အခမဲ့ဖြစ်သည်။"}, "source": {"name": "Singapore ICA / MFA", "url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements"}, "last_verified": "2026-08-18"}, {"country_code": "JP", "country_name": {"en": "Japan", "my": "ဂျပန်"}, "visa_type": "visa_required", "sub_type": "sticker_visa", "allowed_stay_days": 90, "cost": {"required": true, "amount_usd": 100, "local_currency": "MMK", "amount_local": null, "note": {"en": "Consular fee set in JPY (single-entry ~¥15,000 from 1 Jul 2026), collected in local currency at the mission's posted rate. A separate JVAC service fee also applies. USD figure is an approximate conversion.", "my": "ကွန်ဆူလာဗီဇာကြေးကို ဂျပန်ယန်းဖြင့် သတ်မှတ်ထားသည် (တစ်ကြိမ်ဝင် ~¥၁၅,၀၀၀၊ ၂၀၂၆ ဇူလိုင် ၁ မှစ၍)၊ သံရုံးသတ်မှတ်နှုန်းဖြင့် ဒေသတွင်းငွေကြေးဖြင့် ကောက်ခံသည်။ JVAC ဝန်ဆောင်ခ သီးခြားရှိသည်။ USD ပမာဏမှာ ခန့်မှန်းတွက်ချက်မှုဖြစ်သည်။"}}, "fee_breakdown": [{"item": {"en": "Consular visa fee (single-entry)", "my": "ကွန်ဆူလာဗီဇာကြေး (တစ်ကြိမ်ဝင်)"}, "amount_jpy": 15000, "note": {"en": "Multiple-entry ~¥30,000. New rates effective 1 July 2026.", "my": "အကြိမ်များဝင် ~¥၃၀,၀၀၀။ နှုန်းသစ် ၂၀၂၆ ဇူလိုင် ၁ မှစ၍။"}}, {"item": {"en": "JVAC service fee", "my": "JVAC ဝန်ဆောင်ခ"}, "amount_jpy": null, "note": {"en": "Charged by VFS Global per application, on top of the consular fee.", "my": "VFS Global မှ လျှောက်လွှာတစ်ခုစီအတွက် ကွန်ဆူလာကြေးအပြင် ကောက်ခံသည်။"}}], "application_channel": {"en": "Japan Visa Application Centre (JVAC) run by VFS Global in Yangon. Embassy stopped direct acceptance on 10 Dec 2025.", "my": "ရန်ကုန်ရှိ VFS Global မှ လည်ပတ်သော Japan Visa Application Centre (JVAC)။ သံရုံးမှ ၂၀၂၅ ဒီဇင်ဘာ ၁၀ တွင် တိုက်ရိုက်လက်ခံခြင်း ရပ်ဆိုင်းခဲ့သည်။"}, "extra_requirements": [{"en": "Passport valid 6 months beyond stay", "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"}, {"en": "Bank statement / proof of funds", "my": "ဘဏ်စာရင်းရှင်းတမ်း / ငွေကြေးအထောက်အထား"}, {"en": "Income tax returns", "my": "ဝင်ငွေခွန်ပြန်လည်ပေးသွင်းမှု စာရွက်စာတမ်း"}, {"en": "Travel itinerary and proof of onward travel", "my": "ခရီးစဉ်အစီအစဉ်နှင့် ဆက်လက်ခရီးသွားမည့် အထောက်အထား"}, {"en": "Pre-entry tuberculosis screening applies to Myanmar nationals", "my": "မြန်မာနိုင်ငံသားများအတွက် ဝင်ရောက်ခြင်းမပြုမီ တီဘီရောဂါစစ်ဆေးမှု လိုအပ်သည်"}], "notes": {"en": "A visa is required. Applied via JVAC/VFS Global in Yangon, not on arrival. Total out-of-pocket = consular fee + JVAC service fee.", "my": "ဗီဇာလိုအပ်သည်။ ဆိုက်ရောက်ဗီဇာမဟုတ်ဘဲ ရန်ကုန်ရှိ JVAC/VFS Global မှတစ်ဆင့် လျှောက်ထားရသည်။ စုစုပေါင်းကုန်ကျစရိတ် = ကွန်ဆူလာကြေး + JVAC ဝန်ဆောင်ခ။"}, "source": {"name": "Embassy of Japan in Myanmar / MOFA Japan / VFS Global", "url": "https://www.mm.emb-japan.go.jp/itpr_en/consular_en.html"}, "last_verified": "2026-08-18"}]};
+const UI = {
+  eyebrow:{en:"Myanmar (Burma) passport",my:"မြန်မာ ပတ်စပို့"},
+  h1_a:{en:"Do I need a ",my:"ဗီဇာ "},
+  h1_visa:{en:"visa?",my:"လိုသလား?"},
+  sub:{en:"Type a country to see the visa type, how long you can stay, and what it costs \u2014 in one look.",my:"နိုင်ငံတစ်ခုကို ရိုက်ထည့်ပြီး ဗီဇာအမျိုးအစား၊ နေထိုင်ခွင့်ကာလနှင့် ကုန်ကျစရိတ်ကို တစ်ချက်တည်းဖြင့် ကြည့်ပါ။"},
+  placeholder:{en:"Try \u201cJapan\u201d or \u201cSingapore\u201d\u2026",my:"\u201cဂျပန်\u201d သို့မဟုတ် \u201cစင်္ကာပူ\u201d ရိုက်ကြည့်ပါ\u2026"},
+  quick:{en:"Quick check:",my:"မြန်ဆန်စွာစစ်ဆေးရန်:"},
+  need_heading:{en:"What you\u2019ll need",my:"လိုအပ်သည်များ"},
+  source:{en:"Source:",my:"ရင်းမြစ်:"},
+  verified:{en:"verified",my:"စစ်ဆေးပြီး"},
+  stay_prefix:{en:"Up to ",my:""},
+  stay_suffix:{en:" days",my:" ရက်အထိ"},
+  free:{en:"Free",my:"အခမဲ့"},
+  see_details:{en:"See details",my:"အသေးစိတ်ကြည့်ပါ"},
+  local_varies:{en:"Local amount varies",my:"ဒေသတွင်းပမာဏ ကွဲပြားနိုင်သည်"},
+  prompt_start:{en:"Start typing a country name above.",my:"အပေါ်တွင် နိုင်ငံအမည်ကို စတင်ရိုက်ထည့်ပါ။"},
+  count_a:{en:" countries in this list \u00b7 ",my:" နိုင်ငံ ဤစာရင်းတွင် \u00b7 "},
+  updated:{en:"updated ",my:"မွမ်းမံ "},
+  no_match_a:{en:"No match for ",my:"ကိုက်ညီမှုမရှိပါ \u2014 "},
+  no_match_b:{en:" yet.",my:""},
+  covers:{en:"This list currently covers ",my:"ဤစာရင်းတွင် လက်ရှိပါဝင်သည်\u2014 "},
+  footer:{en:"Costs are indicative. Fees set in a foreign currency are collected in local kyat at the mission\u2019s posted daily rate, so amounts vary. Always confirm with the official source before you travel.",my:"ကုန်ကျစရိတ်များမှာ ခန့်မှန်းချက်သာဖြစ်သည်။ နိုင်ငံခြားငွေဖြင့်သတ်မှတ်သောကြေးများကို သံရုံး၏ နေ့စဉ်နှုန်းဖြင့် ကျပ်ငွေဖြင့်ကောက်ခံသဖြင့် ပမာဏကွဲပြားနိုင်သည်။ ခရီးမသွားမီ တရားဝင်ရင်းမြစ်တွင် အမြဲအတည်ပြုပါ။"},
+};
+const VISA_TYPE_LABELS = {
+  visa_free:{en:"Visa-free",my:"ဗီဇာမလို"},
+  visa_on_arrival:{en:"Visa on arrival",my:"ဆိုက်ရောက်ဗီဇာ"},
+  evisa:{en:"e-Visa",my:"အီလက်ထရွန်နစ်ဗီဇာ"},
+  visa_required:{en:"Visa required",my:"ဗီဇာလိုအပ်သည်"},
+};
+const VISA_LIGHT = { visa_free:"go", visa_on_arrival:"caution", evisa:"caution", visa_required:"stop" };
+let lang = "en";
+function t(val){ if(val==null)return ""; if(typeof val==="string")return val; return val[lang]||val.en||""; }
+function normalize(s){ return (s||"").toLowerCase().trim().replace(/\s+/g," "); }
+function searchDestinations(ds,query){
+  const q=normalize(query); if(!q)return [];
+  return (ds.destinations||[]).map((d)=>{
+    const en=normalize(d.country_name.en||d.country_name), my=normalize(d.country_name.my||""), code=normalize(d.country_code);
+    let s=0; if(en===q||my===q||code===q)s=100; else if(en.startsWith(q)||my.startsWith(q))s=80; else if(en.includes(q)||my.includes(q))s=50;
+    return {d,s};
+  }).filter(x=>x.s>0).sort((a,b)=>b.s-a.s).map(x=>x.d);
+}
+function formatCost(d){
+  const c=d.cost||{}; if(!c.required)return {isFree:true,primary:t(UI.free),secondary:null,caveat:null};
+  let primary=typeof c.amount_usd==="number"?"~$"+c.amount_usd+" USD":t(UI.see_details);
+  let secondary=null;
+  if(c.amount_local!=null&&c.local_currency)secondary=c.amount_local+" "+c.local_currency;
+  else if(c.local_currency)secondary=t(UI.local_varies)+" ("+c.local_currency+")";
+  return {isFree:false,primary,secondary,caveat:t(c.note)||null};
+}
+function visaTypeLabel(type){ return t(VISA_TYPE_LABELS[type])||type; }
+function visaLight(type){ return VISA_LIGHT[type]||"stop"; }
+const resultsEl=document.getElementById("results"), input=document.getElementById("q");
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,(c)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function stayText(d){ return d.allowed_stay_days ? t(UI.stay_prefix)+d.allowed_stay_days+t(UI.stay_suffix) : ""; }
+function cardHTML(d){
+  const light=visaLight(d.visa_type), cost=formatCost(d);
+  const reqs=(d.extra_requirements||[]).map((r)=>"<li>"+esc(t(r))+"</li>").join("");
+  const src=d.source||{};
+  return '<article class="card '+light+'"><div class="card-top"><div class="card-head">'+
+    '<h2 class="country">'+esc(t(d.country_name))+'</h2><span class="stay">'+esc(stayText(d))+'</span></div>'+
+    '<span class="badge '+light+'"><span class="dot"></span>'+esc(visaTypeLabel(d.visa_type))+'</span></div>'+
+    '<div class="cost-row"><span class="cost-primary'+(cost.isFree?' free':'')+'">'+esc(cost.primary)+'</span>'+
+    (cost.secondary?'<span class="cost-secondary">'+esc(cost.secondary)+'</span>':'')+
+    (cost.caveat?'<span class="cost-caveat">'+esc(cost.caveat)+'</span>':'')+'</div>'+
+    (reqs?'<details><summary>'+esc(t(UI.need_heading))+'</summary><div class="detail-body">'+
+      (d.notes?'<p class="note">'+esc(t(d.notes))+'</p>':'')+'<ul>'+reqs+'</ul>'+
+      (src.url?'<p class="src">'+esc(t(UI.source))+' <a href="'+esc(src.url)+'" target="_blank" rel="noopener">'+esc(src.name||src.url)+'</a>'+
+        (d.last_verified?' \u00b7 '+esc(t(UI.verified))+' '+esc(d.last_verified):'')+'</p>':'')+'</div></details>':'')+'</article>';
+}
+function render(query){
+  const q=normalize(query);
+  if(!q){ resultsEl.innerHTML='<div class="prompt"><p class="big">'+esc(t(UI.prompt_start))+'</p>'+
+    '<p class="verified">'+DATASET.destinations.length+esc(t(UI.count_a))+esc(t(DATASET.meta.region))+' \u00b7 '+esc(t(UI.updated))+esc(DATASET.meta.last_updated)+'</p></div>'; return; }
+  const matches=searchDestinations(DATASET,query);
+  if(matches.length===0){ resultsEl.innerHTML='<div class="empty">'+esc(t(UI.no_match_a))+'\u201c'+esc(query)+'\u201d'+esc(t(UI.no_match_b))+'<br>'+
+    esc(t(UI.covers))+DATASET.destinations.map((d)=>esc(t(d.country_name))).join(", ")+'.</div>'; return; }
+  resultsEl.innerHTML=matches.map(cardHTML).join("");
+}
+function applyUI(){
+  document.documentElement.setAttribute("data-lang",lang);
+  document.getElementById("ui-eyebrow").textContent=t(UI.eyebrow);
+  document.getElementById("ui-h1").innerHTML=esc(t(UI.h1_a))+'<span class="gold">'+esc(t(UI.h1_visa))+'</span>';
+  document.getElementById("ui-sub").textContent=t(UI.sub);
+  document.getElementById("ui-quick").textContent=t(UI.quick);
+  document.getElementById("ui-footer").textContent=t(UI.footer);
+  input.placeholder=t(UI.placeholder);
+  document.querySelectorAll("[data-fill-en]").forEach((el)=>{ el.textContent=lang==="my"?el.getAttribute("data-fill-my"):el.getAttribute("data-fill-en"); });
+  document.getElementById("lang-en").setAttribute("aria-pressed",lang==="en");
+  document.getElementById("lang-my").setAttribute("aria-pressed",lang==="my");
+}
+function setLang(l){ lang=l; applyUI(); render(input.value); input.focus(); }
+document.getElementById("lang-en").addEventListener("click",()=>setLang("en"));
+document.getElementById("lang-my").addEventListener("click",()=>setLang("my"));
+input.addEventListener("input",(e)=>render(e.target.value));
+document.querySelectorAll("[data-fill-en]").forEach((el)=>{ el.addEventListener("click",()=>{ input.value=lang==="my"?el.getAttribute("data-fill-my"):el.getAttribute("data-fill-en"); render(input.value); input.focus(); }); });
+applyUI(); render("");
+</script>
+
+
+</body></html>

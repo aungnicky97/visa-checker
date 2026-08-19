@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "passport": "MM",
+    "passport_name": {
+      "en": "Myanmar (Burma)",
+      "my": "မြန်မာ"
+    },
+    "region": {
+      "en": "Asia",
+      "my": "အာရှ"
+    },
+    "schema_version": "2.0",
+    "last_updated": "2026-08-18",
+    "notes": "Translatable fields use {en, my}. Burmese immigration wording is a first draft and should be reviewed by a native speaker before publishing."
+  },
+  "destinations": [
+    {
+      "country_code": "SG",
+      "country_name": {
+        "en": "Singapore",
+        "my": "စင်္ကာပူ"
+      },
+      "visa_type": "visa_free",
+      "allowed_stay_days": 30,
+      "cost": {
+        "required": false,
+        "amount_usd": 0,
+        "local_currency": null,
+        "amount_local": 0
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "SG Arrival Card (SGAC) must be submitted online before arrival (free)",
+          "my": "မရောက်မီ SG Arrival Card (SGAC) ကို အွန်လိုင်းတွင် တင်ရမည် (အခမဲ့)"
+        },
+        {
+          "en": "Proof of onward travel and sufficient funds",
+          "my": "ဆက်လက်ခရီးသွားမည့် အထောက်အထားနှင့် လုံလောက်သော ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "notes": {
+        "en": "Visa-free for up to 30 days. The SG Arrival Card is a mandatory online declaration, not a visa, and is free.",
+        "my": "ရက် ၃၀ အထိ ဗီဇာမလို။ SG Arrival Card သည် မဖြစ်မနေ တင်ရသော အွန်လိုင်းကြေညာချက်ဖြစ်ပြီး ဗီဇာမဟုတ်ပါ၊ အခမဲ့ဖြစ်သည်။"
+      },
+      "source": {
+        "name": "Singapore ICA / MFA",
+        "url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements"
+      },
+      "last_verified": "2026-08-18"
+    },
+    {
+      "country_code": "JP",
+      "country_name": {
+        "en": "Japan",
+        "my": "ဂျပန်"
+      },
+      "visa_type": "visa_required",
+      "sub_type": "sticker_visa",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 100,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Consular fee set in JPY (single-entry ~¥15,000 from 1 Jul 2026), collected in local currency at the mission's posted rate. A separate JVAC service fee also applies. USD figure is an approximate conversion.",
+          "my": "ကွန်ဆူလာဗီဇာကြေးကို ဂျပန်ယန်းဖြင့် သတ်မှတ်ထားသည် (တစ်ကြိမ်ဝင် ~¥၁၅,၀၀၀၊ ၂၀၂၆ ဇူလိုင် ၁ မှစ၍)၊ သံရုံးသတ်မှတ်နှုန်းဖြင့် ဒေသတွင်းငွေကြေးဖြင့် ကောက်ခံသည်။ JVAC ဝန်ဆောင်ခ သီးခြားရှိသည်။ USD ပမာဏမှာ ခန့်မှန်းတွက်ချက်မှုဖြစ်သည်။"
+        }
+      },
+      "fee_breakdown": [
+        {
+          "item": {
+            "en": "Consular visa fee (single-entry)",
+            "my": "ကွန်ဆူလာဗီဇာကြေး (တစ်ကြိမ်ဝင်)"
+          },
+          "amount_jpy": 15000,
+          "note": {
+            "en": "Multiple-entry ~¥30,000. New rates effective 1 July 2026.",
+            "my": "အကြိမ်များဝင် ~¥၃၀,၀၀၀။ နှုန်းသစ် ၂၀၂၆ ဇူလိုင် ၁ မှစ၍။"
+          }
+        },
+        {
+          "item": {
+            "en": "JVAC service fee",
+            "my": "JVAC ဝန်ဆောင်ခ"
+          },
+          "amount_jpy": null,
+          "note": {
+            "en": "Charged by VFS Global per application, on top of the consular fee.",
+            "my": "VFS Global မှ လျှောက်လွှာတစ်ခုစီအတွက် ကွန်ဆူလာကြေးအပြင် ကောက်ခံသည်။"
+          }
+        }
+      ],
+      "application_channel": {
+        "en": "Japan Visa Application Centre (JVAC) run by VFS Global in Yangon. Embassy stopped direct acceptance on 10 Dec 2025.",
+        "my": "ရန်ကုန်ရှိ VFS Global မှ လည်ပတ်သော Japan Visa Application Centre (JVAC)။ သံရုံးမှ ၂၀၂၅ ဒီဇင်ဘာ ၁၀ တွင် တိုက်ရိုက်လက်ခံခြင်း ရပ်ဆိုင်းခဲ့သည်။"
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Bank statement / proof of funds",
+          "my": "ဘဏ်စာရင်းရှင်းတမ်း / ငွေကြေးအထောက်အထား"
+        },
+        {
+          "en": "Income tax returns",
+          "my": "ဝင်ငွေခွန်ပြန်လည်ပေးသွင်းမှု စာရွက်စာတမ်း"
+        },
+        {
+          "en": "Travel itinerary and proof of onward travel",
+          "my": "ခရီးစဉ်အစီအစဉ်နှင့် ဆက်လက်ခရီးသွားမည့် အထောက်အထား"
+        },
+        {
+          "en": "Pre-entry tuberculosis screening applies to Myanmar nationals",
+          "my": "မြန်မာနိုင်ငံသားများအတွက် ဝင်ရောက်ခြင်းမပြုမီ တီဘီရောဂါစစ်ဆေးမှု လိုအပ်သည်"
+        }
+      ],
+      "notes": {
+        "en": "A visa is required. Applied via JVAC/VFS Global in Yangon, not on arrival. Total out-of-pocket = consular fee + JVAC service fee.",
+        "my": "ဗီဇာလိုအပ်သည်။ ဆိုက်ရောက်ဗီဇာမဟုတ်ဘဲ ရန်ကုန်ရှိ JVAC/VFS Global မှတစ်ဆင့် လျှောက်ထားရသည်။ စုစုပေါင်းကုန်ကျစရိတ် = ကွန်ဆူလာကြေး + JVAC ဝန်ဆောင်ခ။"
+      },
+      "source": {
+        "name": "Embassy of Japan in Myanmar / MOFA Japan / VFS Global",
+        "url": "https://www.mm.emb-japan.go.jp/itpr_en/consular_en.html"
+      },
+      "last_verified": "2026-08-18"
+    }
+  ]
+}
