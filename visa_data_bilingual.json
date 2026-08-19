@@ -6,12 +6,12 @@
       "my": "မြန်မာ"
     },
     "region": {
-      "en": "Asia",
-      "my": "အာရှ"
+      "en": "Asia, Europe & North America",
+      "my": "အာရှ၊ ဥရောပနှင့် မြောက်အမေရိက"
     },
-    "schema_version": "2.0",
+    "schema_version": "3.0",
     "last_updated": "2026-08-19",
-    "notes": "Translatable fields use {en, my}. Burmese immigration wording is a first draft and should be reviewed by a native speaker before publishing."
+    "notes": "v1 dataset. visa_category is 'tourist' for all entries (other categories to be added later). Costs are indicative; fees in foreign currency are collected in local kyat at the mission's posted rate. Addresses and fees are best-effort and MUST be re-verified against official sources before publishing. Burmese wording is a first draft for native-speaker review."
   },
   "destinations": [
     {
@@ -21,6 +21,7 @@
         "my": "စင်္ကာပူ"
       },
       "visa_type": "visa_free",
+      "visa_category": "tourist",
       "allowed_stay_days": 30,
       "cost": {
         "required": false,
@@ -34,207 +35,81 @@
           "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
         },
         {
-          "en": "SG Arrival Card (SGAC) must be submitted online before arrival (free)",
-          "my": "မရောက်မီ SG Arrival Card (SGAC) ကို အွန်လိုင်းတွင် တင်ရမည် (အခမဲ့)"
+          "en": "SG Arrival Card (SGAC) submitted online (free)",
+          "my": "SG Arrival Card အွန်လိုင်းတွင်တင်ရန် (အခမဲ့)"
         },
         {
-          "en": "Proof of onward travel and sufficient funds",
-          "my": "ဆက်လက်ခရီးသွားမည့် အထောက်အထားနှင့် လုံလောက်သော ငွေကြေးအထောက်အထား"
+          "en": "Proof of onward/return travel",
+          "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
+        },
+        {
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
         }
       ],
+      "application": null,
       "notes": {
-        "en": "Visa-free for up to 30 days. The SG Arrival Card is a mandatory online declaration, not a visa, and is free.",
-        "my": "ရက် ၃၀ အထိ ဗီဇာမလို။ SG Arrival Card သည် မဖြစ်မနေ တင်ရသော အွန်လိုင်းကြေညာချက်ဖြစ်ပြီး ဗီဇာမဟုတ်ပါ၊ အခမဲ့ဖြစ်သည်။"
+        "en": "Visa-free up to 30 days. The SG Arrival Card (SGAC) is a mandatory free online declaration before arrival.",
+        "my": "ရက် ၃၀ အထိ ဗီဇာမလို။ SG Arrival Card သည် မရောက်မီ မဖြစ်မနေ တင်ရသော အခမဲ့ အွန်လိုင်းကြေညာချက်ဖြစ်သည်။"
       },
       "source": {
         "name": "Singapore ICA / MFA",
         "url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements"
       },
-      "last_verified": "2026-08-18"
-    },
-    {
-      "country_code": "JP",
-      "country_name": {
-        "en": "Japan",
-        "my": "ဂျပန်"
-      },
-      "visa_type": "visa_required",
-      "sub_type": "sticker_visa",
-      "allowed_stay_days": 90,
-      "cost": {
-        "required": true,
-        "amount_usd": 100,
-        "local_currency": "MMK",
-        "amount_local": null,
-        "note": {
-          "en": "Consular fee set in JPY (single-entry ~¥15,000 from 1 Jul 2026), collected in local currency at the mission's posted rate. A separate JVAC service fee also applies. USD figure is an approximate conversion.",
-          "my": "ကွန်ဆူလာဗီဇာကြေးကို ဂျပန်ယန်းဖြင့် သတ်မှတ်ထားသည် (တစ်ကြိမ်ဝင် ~¥၁၅,၀၀၀၊ ၂၀၂၆ ဇူလိုင် ၁ မှစ၍)၊ သံရုံးသတ်မှတ်နှုန်းဖြင့် ဒေသတွင်းငွေကြေးဖြင့် ကောက်ခံသည်။ JVAC ဝန်ဆောင်ခ သီးခြားရှိသည်။ USD ပမာဏမှာ ခန့်မှန်းတွက်ချက်မှုဖြစ်သည်။"
-        }
-      },
-      "fee_breakdown": [
-        {
-          "item": {
-            "en": "Consular visa fee (single-entry)",
-            "my": "ကွန်ဆူလာဗီဇာကြေး (တစ်ကြိမ်ဝင်)"
-          },
-          "amount_jpy": 15000,
-          "note": {
-            "en": "Multiple-entry ~¥30,000. New rates effective 1 July 2026.",
-            "my": "အကြိမ်များဝင် ~¥၃၀,၀၀၀။ နှုန်းသစ် ၂၀၂၆ ဇူလိုင် ၁ မှစ၍။"
-          }
-        },
-        {
-          "item": {
-            "en": "JVAC service fee",
-            "my": "JVAC ဝန်ဆောင်ခ"
-          },
-          "amount_jpy": null,
-          "note": {
-            "en": "Charged by VFS Global per application, on top of the consular fee.",
-            "my": "VFS Global မှ လျှောက်လွှာတစ်ခုစီအတွက် ကွန်ဆူလာကြေးအပြင် ကောက်ခံသည်။"
-          }
-        }
-      ],
-      "application_channel": {
-        "en": "Japan Visa Application Centre (JVAC) run by VFS Global in Yangon. Embassy stopped direct acceptance on 10 Dec 2025.",
-        "my": "ရန်ကုန်ရှိ VFS Global မှ လည်ပတ်သော Japan Visa Application Centre (JVAC)။ သံရုံးမှ ၂၀၂၅ ဒီဇင်ဘာ ၁၀ တွင် တိုက်ရိုက်လက်ခံခြင်း ရပ်ဆိုင်းခဲ့သည်။"
-      },
-      "extra_requirements": [
-        {
-          "en": "Passport valid 6 months beyond stay",
-          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
-        },
-        {
-          "en": "Bank statement / proof of funds",
-          "my": "ဘဏ်စာရင်းရှင်းတမ်း / ငွေကြေးအထောက်အထား"
-        },
-        {
-          "en": "Income tax returns",
-          "my": "ဝင်ငွေခွန်ပြန်လည်ပေးသွင်းမှု စာရွက်စာတမ်း"
-        },
-        {
-          "en": "Travel itinerary and proof of onward travel",
-          "my": "ခရီးစဉ်အစီအစဉ်နှင့် ဆက်လက်ခရီးသွားမည့် အထောက်အထား"
-        },
-        {
-          "en": "Pre-entry tuberculosis screening applies to Myanmar nationals",
-          "my": "မြန်မာနိုင်ငံသားများအတွက် ဝင်ရောက်ခြင်းမပြုမီ တီဘီရောဂါစစ်ဆေးမှု လိုအပ်သည်"
-        }
-      ],
-      "notes": {
-        "en": "A visa is required. Applied via JVAC/VFS Global in Yangon, not on arrival. Total out-of-pocket = consular fee + JVAC service fee.",
-        "my": "ဗီဇာလိုအပ်သည်။ ဆိုက်ရောက်ဗီဇာမဟုတ်ဘဲ ရန်ကုန်ရှိ JVAC/VFS Global မှတစ်ဆင့် လျှောက်ထားရသည်။ စုစုပေါင်းကုန်ကျစရိတ် = ကွန်ဆူလာကြေး + JVAC ဝန်ဆောင်ခ။"
-      },
-      "source": {
-        "name": "Embassy of Japan in Myanmar / MOFA Japan / VFS Global",
-        "url": "https://www.mm.emb-japan.go.jp/itpr_en/consular_en.html"
-      },
-      "last_verified": "2026-08-18"
-    },
-    {
-      "country_code": "KR",
-      "country_name": {
-        "en": "South Korea",
-        "my": "တောင်ကိုရီးယား"
-      },
-      "visa_type": "visa_required",
-      "allowed_stay_days": 90,
-      "cost": {
-        "required": true,
-        "amount_usd": 50,
-        "local_currency": "MMK",
-        "amount_local": null,
-        "note": {
-          "en": "Approximate consular fee for a single-entry short-term (C-3) tourist visa. Paid at application. K-ETA does NOT apply to Myanmar passport holders — a full visa is required.",
-          "my": "တစ်ကြိမ်ဝင် ရေတိုခရီးသွား (C-3) ဗီဇာအတွက် ခန့်မှန်းကွန်ဆူလာကြေး။ လျှောက်ထားချိန်တွင် ပေးရသည်။ K-ETA သည် မြန်မာပတ်စပို့ကိုင်ဆောင်သူများအတွက် အသုံးမပြုနိုင်ပါ — ဗီဇာ အပြည့်အဝ လိုအပ်သည်။"
-        }
-      },
-      "extra_requirements": [
-        {
-          "en": "Passport valid 6 months beyond stay",
-          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
-        },
-        {
-          "en": "Completed visa application form + passport photo",
-          "my": "ဖြည့်စွက်ပြီး ဗီဇာလျှောက်လွှာနှင့် ပတ်စပို့ဓာတ်ပုံ"
-        },
-        {
-          "en": "Proof of funds (bank statement)",
-          "my": "ငွေကြေးအထောက်အထား (ဘဏ်စာရင်းရှင်းတမ်း)"
-        },
-        {
-          "en": "Travel itinerary, flight and hotel bookings",
-          "my": "ခရီးစဉ်အစီအစဉ်၊ လေယာဉ်နှင့် ဟိုတယ်ကြိုတင်မှာယူမှု"
-        },
-        {
-          "en": "Biometric enrollment at VFS Global Yangon",
-          "my": "VFS Global ရန်ကုန်တွင် ဇီဝမက်ထရစ် စာရင်းသွင်းခြင်း"
-        }
-      ],
-      "notes": {
-        "en": "A visa is required. Apply at the Embassy of the Republic of Korea in Yangon or via VFS Global Yangon (biometrics). Start online at visa.mofa.go.kr. Processing about 5-7 business days.",
-        "my": "ဗီဇာလိုအပ်သည်။ ရန်ကုန်ရှိ ကိုရီးယားသမ္မတနိုင်ငံသံရုံး သို့မဟုတ် VFS Global ရန်ကုန် (ဇီဝမက်ထရစ်) မှတစ်ဆင့် လျှောက်ထားပါ။ visa.mofa.go.kr တွင် အွန်လိုင်းစတင်ပါ။ ဆောင်ရွက်ချိန် ရုံးဖွင့်ရက် ၅-၇ ရက်ခန့်။"
-      },
-      "source": {
-        "name": "Embassy of the Republic of Korea, Yangon / VFS Global",
-        "url": "https://overseas.mofa.go.kr/mm-en/index.do"
-      },
       "last_verified": "2026-08-19"
     },
     {
-      "country_code": "TW",
+      "country_code": "TH",
       "country_name": {
-        "en": "Taiwan",
-        "my": "ထိုင်ဝမ်"
-      },
-      "visa_type": "visa_required",
-      "sub_type": "conditional_authorization",
-      "allowed_stay_days": 14,
-      "cost": {
-        "required": true,
-        "amount_usd": 50,
-        "local_currency": "MMK",
-        "amount_local": null,
-        "note": {
-          "en": "TWO PATHS. (1) FREE online Travel Authorization Certificate (TAC) for a 14-day stay — ONLY if you hold a valid or recently-expired (within 10 years) visa or residence permit from the US, Canada, UK, EU/Schengen, Australia, New Zealand, Japan, or South Korea. (2) If you do NOT qualify, a paid visitor visa from TETO is required (~$50, sticker visa). USD figure refers to the paid visa path.",
-          "my": "လမ်းကြောင်း ၂ ခု။ (၁) ရက် ၁၄ ရက်နေထိုင်ရန် အခမဲ့ အွန်လိုင်း Travel Authorization Certificate (TAC) — အမေရိကန်၊ ကနေဒါ၊ UK၊ EU/Schengen၊ ဩစတြေးလျ၊ နယူးဇီလန်၊ ဂျပန် သို့မဟုတ် တောင်ကိုရီးယားမှ တရားဝင် သို့မဟုတ် (၁၀ နှစ်အတွင်း) သက်တမ်းကုန်ဆုံးထားသော ဗီဇာ/နေထိုင်ခွင့် ရှိမှသာ။ (၂) အရည်အချင်းမပြည့်မီပါက TETO မှ အခပေးဗီဇာ လိုအပ်သည် (~$50)။ USD ပမာဏသည် အခပေးဗီဇာလမ်းကြောင်းကို ရည်ညွှန်းသည်။"
-        }
-      },
-      "extra_requirements": [
-        {
-          "en": "Passport valid 6 months beyond stay, 2 blank pages",
-          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့၊ ကွက်လပ် ၂ မျက်နှာ"
-        },
-        {
-          "en": "For free TAC: qualifying visa/residence from US, CA, UK, EU/Schengen, AU, NZ, JP, or KR",
-          "my": "အခမဲ့ TAC အတွက်: US၊ CA၊ UK၊ EU/Schengen၊ AU၊ NZ၊ JP သို့မဟုတ် KR မှ အရည်အချင်းပြည့်မီသော ဗီဇာ/နေထိုင်ခွင့်"
-        },
-        {
-          "en": "Recent digital passport photo",
-          "my": "မကြာသေးမီက ဒစ်ဂျစ်တယ် ပတ်စပို့ဓာတ်ပုံ"
-        },
-        {
-          "en": "For paid visa: apply at TETO (Taipei Economic and Trade Office)",
-          "my": "အခပေးဗီဇာအတွက်: TETO (Taipei Economic and Trade Office) တွင် လျှောက်ထားပါ"
-        }
-      ],
-      "notes": {
-        "en": "Most Myanmar travelers need either a TAC or a visa. The free online TAC (14 days, multiple entry within 90-day validity) is available only if you hold a qualifying visa/residence permit from a designated developed country. Otherwise apply for a paid visitor visa at TETO. Always confirm eligibility on the official BOCA website.",
-        "my": "မြန်မာခရီးသွားအများစုသည် TAC သို့မဟုတ် ဗီဇာ တစ်ခုခု လိုအပ်သည်။ အခမဲ့ အွန်လိုင်း TAC (ရက် ၁၄ ရက်၊ ရက် ၉၀ သက်တမ်းအတွင်း အကြိမ်များဝင်) သည် သတ်မှတ်ထားသော ဖွံ့ဖြိုးပြီးနိုင်ငံမှ အရည်အချင်းပြည့်မီသော ဗီဇာ/နေထိုင်ခွင့် ရှိမှသာ ရရှိနိုင်သည်။ မဟုတ်ပါက TETO တွင် အခပေးဗီဇာ လျှောက်ထားပါ။ တရားဝင် BOCA ဝဘ်ဆိုက်တွင် အရည်အချင်းကို အမြဲအတည်ပြုပါ။"
-      },
-      "source": {
-        "name": "Bureau of Consular Affairs, Taiwan (BOCA) / National Immigration Agency",
-        "url": "https://www.boca.gov.tw/np-152-2.html"
-      },
-      "last_verified": "2026-08-19"
-    },
-    {
-      "country_code": "RU",
-      "country_name": {
-        "en": "Russia",
-        "my": "ရုရှား"
+        "en": "Thailand",
+        "my": "ထိုင်း"
       },
       "visa_type": "visa_free",
+      "visa_category": "tourist",
+      "allowed_stay_days": 14,
+      "cost": {
+        "required": false,
+        "amount_usd": 0,
+        "local_currency": null,
+        "amount_local": 0
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Thailand Digital Arrival Card (TDAC) online",
+          "my": "Thailand Digital Arrival Card (TDAC) အွန်လိုင်း"
+        },
+        {
+          "en": "Proof of onward/return travel",
+          "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
+        },
+        {
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": null,
+      "notes": {
+        "en": "Visa-free up to 14 days for tourism under the ASEAN arrangement. A Thailand Digital Arrival Card (TDAC) is required online before arrival.",
+        "my": "ASEAN သဘောတူညီချက်အရ ခရီးသွားအတွက် ရက် ၁၄ ရက်အထိ ဗီဇာမလို။ မရောက်မီ Thailand Digital Arrival Card (TDAC) အွန်လိုင်းတွင် လိုအပ်သည်။"
+      },
+      "source": {
+        "name": "Royal Thai Embassy / Thai Immigration",
+        "url": "https://www.thaievisa.go.th/"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "VN",
+      "country_name": {
+        "en": "Vietnam",
+        "my": "ဗီယက်နမ်"
+      },
+      "visa_type": "visa_free",
+      "visa_category": "tourist",
       "allowed_stay_days": 30,
       "cost": {
         "required": false,
@@ -252,16 +127,1146 @@
           "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
         },
         {
-          "en": "For tourism only — not for study, work, or residency",
-          "my": "ခရီးသွားအတွက်သာ — ပညာသင်၊ အလုပ် သို့မဟုတ် အခြေချနေထိုင်ရန် မဟုတ်ပါ"
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
         }
       ],
+      "application": null,
       "notes": {
-        "en": "Visa-free for up to 30 days under the Russia-Myanmar mutual visa exemption agreement, effective 27 January 2026. Applies to ordinary passport holders for tourism. Does not cover study, work, or permanent residency — those still require a visa. (A separate Russian e-visa also exists but the visa-free agreement covers short tourism.)",
-        "my": "ရုရှား-မြန်မာ အပြန်အလှန်ဗီဇာကင်းလွတ်ခွင့် သဘောတူညီချက်အရ ရက် ၃၀ အထိ ဗီဇာမလို၊ ၂၀၂၆ ဇန်နဝါရီ ၂၇ မှ စတင်အကျုံးဝင်သည်။ သာမန်ပတ်စပို့ကိုင်ဆောင်သူများ ခရီးသွားအတွက် သက်ဆိုင်သည်။ ပညာသင်၊ အလုပ် သို့မဟုတ် အမြဲတမ်းနေထိုင်ခွင့်အတွက် မအကျုံးဝင်ပါ — ၎င်းတို့သည် ဗီဇာ လိုအပ်သေးသည်။"
+        "en": "Visa-free up to 30 days for tourism or business under the Myanmar–Vietnam arrangement.",
+        "my": "မြန်မာ–ဗီယက်နမ် သဘောတူညီချက်အရ ခရီးသွား သို့မဟုတ် စီးပွားရေးအတွက် ရက် ၃၀ အထိ ဗီဇာမလို။"
       },
       "source": {
-        "name": "Myanmar Ministry of Information / Russian Ministry of Foreign Affairs",
+        "name": "Vietnam Immigration Department",
+        "url": "https://evisa.gov.vn/"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "MY",
+      "country_name": {
+        "en": "Malaysia",
+        "my": "မလေးရှား"
+      },
+      "visa_type": "visa_free",
+      "visa_category": "tourist",
+      "allowed_stay_days": 14,
+      "cost": {
+        "required": false,
+        "amount_usd": 0,
+        "local_currency": null,
+        "amount_local": 0
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Malaysia Digital Arrival Card (MDAC) online",
+          "my": "Malaysia Digital Arrival Card (MDAC) အွန်လိုင်း"
+        },
+        {
+          "en": "Proof of onward/return travel",
+          "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
+        },
+        {
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": null,
+      "notes": {
+        "en": "Visa-free up to 14 days for tourism under the ASEAN arrangement. A Malaysia Digital Arrival Card (MDAC) is required online before arrival.",
+        "my": "ASEAN သဘောတူညီချက်အရ ခရီးသွားအတွက် ရက် ၁၄ ရက်အထိ ဗီဇာမလို။ မရောက်မီ Malaysia Digital Arrival Card (MDAC) အွန်လိုင်းတွင် လိုအပ်သည်။"
+      },
+      "source": {
+        "name": "Malaysian Immigration Department",
+        "url": "https://malaysiavisa.imi.gov.my/"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "ID",
+      "country_name": {
+        "en": "Indonesia",
+        "my": "အင်ဒိုနီးရှား"
+      },
+      "visa_type": "visa_free",
+      "visa_category": "tourist",
+      "allowed_stay_days": 30,
+      "cost": {
+        "required": false,
+        "amount_usd": 0,
+        "local_currency": null,
+        "amount_local": 0
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Proof of onward/return travel",
+          "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
+        },
+        {
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": null,
+      "notes": {
+        "en": "Visa-free up to 30 days for tourism under the ASEAN arrangement.",
+        "my": "ASEAN သဘောတူညီချက်အရ ခရီးသွားအတွက် ရက် ၃၀ အထိ ဗီဇာမလို။"
+      },
+      "source": {
+        "name": "Indonesian Directorate General of Immigration",
+        "url": "https://www.imigrasi.go.id/"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "PH",
+      "country_name": {
+        "en": "Philippines",
+        "my": "ဖိလစ်ပိုင်"
+      },
+      "visa_type": "visa_free",
+      "visa_category": "tourist",
+      "allowed_stay_days": 30,
+      "cost": {
+        "required": false,
+        "amount_usd": 0,
+        "local_currency": null,
+        "amount_local": 0
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Proof of onward/return travel",
+          "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
+        },
+        {
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": null,
+      "notes": {
+        "en": "Visa-free up to 30 days for tourism under the ASEAN arrangement.",
+        "my": "ASEAN သဘောတူညီချက်အရ ခရီးသွားအတွက် ရက် ၃၀ အထိ ဗီဇာမလို။"
+      },
+      "source": {
+        "name": "Philippine Bureau of Immigration",
+        "url": "https://immigration.gov.ph/"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "LA",
+      "country_name": {
+        "en": "Laos",
+        "my": "လာအို"
+      },
+      "visa_type": "visa_free",
+      "visa_category": "tourist",
+      "allowed_stay_days": 14,
+      "cost": {
+        "required": false,
+        "amount_usd": 0,
+        "local_currency": null,
+        "amount_local": 0
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Proof of onward/return travel",
+          "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
+        },
+        {
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": null,
+      "notes": {
+        "en": "Visa-free up to 14 days for tourism under the ASEAN arrangement.",
+        "my": "ASEAN သဘောတူညီချက်အရ ခရီးသွားအတွက် ရက် ၁၄ ရက်အထိ ဗီဇာမလို။"
+      },
+      "source": {
+        "name": "Lao Immigration Department",
+        "url": "https://laoevisa.gov.la/"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "KH",
+      "country_name": {
+        "en": "Cambodia",
+        "my": "ကမ္ဘောဒီးယား"
+      },
+      "visa_type": "visa_free",
+      "visa_category": "tourist",
+      "allowed_stay_days": 14,
+      "cost": {
+        "required": false,
+        "amount_usd": 0,
+        "local_currency": null,
+        "amount_local": 0
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Proof of onward/return travel",
+          "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
+        },
+        {
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": null,
+      "notes": {
+        "en": "Visa-free up to 14 days for tourism under the ASEAN arrangement. (An e-visa is also available for longer stays.)",
+        "my": "ASEAN သဘောတူညီချက်အရ ခရီးသွားအတွက် ရက် ၁၄ ရက်အထိ ဗီဇာမလို။ (ကြာရှည်နေထိုင်ရန် e-visa လည်း ရနိုင်သည်။)"
+      },
+      "source": {
+        "name": "Cambodia Ministry of Foreign Affairs",
+        "url": "https://www.evisa.gov.kh/"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "BN",
+      "country_name": {
+        "en": "Brunei",
+        "my": "ဘရူနိုင်း"
+      },
+      "visa_type": "visa_free",
+      "visa_category": "tourist",
+      "allowed_stay_days": 14,
+      "cost": {
+        "required": false,
+        "amount_usd": 0,
+        "local_currency": null,
+        "amount_local": 0
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Proof of onward/return travel",
+          "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
+        },
+        {
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": null,
+      "notes": {
+        "en": "Visa-free up to 14 days for tourism under the ASEAN arrangement.",
+        "my": "ASEAN သဘောတူညီချက်အရ ခရီးသွားအတွက် ရက် ၁၄ ရက်အထိ ဗီဇာမလို။"
+      },
+      "source": {
+        "name": "Brunei Immigration Department",
+        "url": "http://www.immigration.gov.bn/"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "JP",
+      "country_name": {
+        "en": "Japan",
+        "my": "ဂျပန်"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 100,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Consular fee set in JPY (~¥15,000 single-entry from 1 Jul 2026), collected in local currency; separate JVAC service fee applies. USD is approximate.",
+          "my": "ကွန်ဆူလာကြေးကို ယန်းဖြင့်သတ်မှတ် (~¥၁၅,၀၀၀ တစ်ကြိမ်ဝင်၊ ၂၀၂၆ ဇူလိုင် ၁ မှ)၊ ဒေသတွင်းငွေဖြင့်ကောက်ခံ။ JVAC ဝန်ဆောင်ခ သီးခြား။ USD မှာ ခန့်မှန်း။"
+        }
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Bank statement / proof of funds",
+          "my": "ဘဏ်စာရင်း / ငွေကြေးအထောက်အထား"
+        },
+        {
+          "en": "Income tax returns",
+          "my": "ဝင်ငွေခွန်ပြန်လည်ပေးသွင်းမှု"
+        },
+        {
+          "en": "Travel itinerary and proof of onward travel",
+          "my": "ခရီးစဉ်နှင့် ဆက်လက်ခရီးသွားအထောက်အထား"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Japan Visa Application Centre (VFS Global), Yangon",
+          "my": "Japan Visa Application Centre (VFS Global)၊ ရန်ကုန်"
+        },
+        "address": "Yangon (see VFS Global Myanmar site for exact address)",
+        "hours": "Mon–Fri (check VFS site)",
+        "map_url": null,
+        "apply_url": "https://visa.vfsglobal.com/mmr/en/jpn/"
+      },
+      "notes": {
+        "en": "A tourist visa is required. Apply via the Japan Visa Application Centre (VFS Global) in Yangon — not on arrival. Total cost = consular fee (~¥15,000 single-entry, collected in local currency) + JVAC service fee.",
+        "my": "ခရီးသွားဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ Japan Visa Application Centre (VFS Global) မှတစ်ဆင့် လျှောက်ထားပါ — ဆိုက်ရောက်ဗီဇာမဟုတ်ပါ။ စုစုပေါင်း = ကွန်ဆူလာကြေး (~¥၁၅,၀၀၀ တစ်ကြိမ်ဝင်) + JVAC ဝန်ဆောင်ခ။"
+      },
+      "source": {
+        "name": "Embassy of Japan in Myanmar / MOFA Japan",
+        "url": "https://www.mm.emb-japan.go.jp/itpr_en/consular_en.html"
+      },
+      "last_verified": "2026-08-19",
+      "sub_type": "sticker_visa"
+    },
+    {
+      "country_code": "KR",
+      "country_name": {
+        "en": "South Korea",
+        "my": "တောင်ကိုရီးယား"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 50,
+        "local_currency": "MMK",
+        "amount_local": null
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Completed application form + passport photo",
+          "my": "ဖြည့်စွက်ပြီး လျှောက်လွှာနှင့် ပတ်စပို့ဓာတ်ပုံ"
+        },
+        {
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+        },
+        {
+          "en": "Travel itinerary, flight and hotel bookings",
+          "my": "ခရီးစဉ်၊ လေယာဉ်နှင့် ဟိုတယ်ကြိုတင်မှာယူမှု"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Embassy of the Republic of Korea / VFS Global, Yangon",
+          "my": "ကိုရီးယားသံရုံး / VFS Global၊ ရန်ကုန်"
+        },
+        "address": "97 University Avenue Road, Kamayut Township, Yangon",
+        "hours": "Mon–Fri (check embassy site)",
+        "map_url": null,
+        "apply_url": "https://visa.mofa.go.kr/"
+      },
+      "notes": {
+        "en": "A tourist visa (C-3) is required. K-ETA does NOT apply to Myanmar passport holders. Apply at the Korean Embassy or VFS Global in Yangon; processing ~5–7 business days.",
+        "my": "ခရီးသွားဗီဇာ (C-3) လိုအပ်သည်။ K-ETA သည် မြန်မာပတ်စပို့ကို အသုံးမပြုနိုင်ပါ။ ရန်ကုန်ရှိ ကိုရီးယားသံရုံး သို့မဟုတ် VFS Global တွင် လျှောက်ထားပါ၊ ဆောင်ရွက်ချိန် ~၅–၇ ရက်။"
+      },
+      "source": {
+        "name": "Embassy of the Republic of Korea, Yangon",
+        "url": "https://overseas.mofa.go.kr/mm-en/index.do"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "TW",
+      "country_name": {
+        "en": "Taiwan",
+        "my": "ထိုင်ဝမ်"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 14,
+      "cost": {
+        "required": true,
+        "amount_usd": 50,
+        "local_currency": "MMK",
+        "amount_local": null
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "For free TAC: qualifying visa/residence from a designated developed country",
+          "my": "အခမဲ့ TAC: သတ်မှတ်ဖွံ့ဖြိုးပြီးနိုင်ငံမှ အရည်အချင်းပြည့်မီသော ဗီဇာ/နေထိုင်ခွင့်"
+        },
+        {
+          "en": "Recent digital passport photo",
+          "my": "မကြာသေးမီ ဒစ်ဂျစ်တယ်ဓာတ်ပုံ"
+        },
+        {
+          "en": "For paid visa: apply at TETO",
+          "my": "အခပေးဗီဇာ: TETO တွင်လျှောက်ပါ"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Taipei Economic and Trade Office (TETO) — or free online TAC if eligible",
+          "my": "TETO — သို့မဟုတ် အရည်အချင်းပြည့်မီပါက အခမဲ့ အွန်လိုင်း TAC"
+        },
+        "address": "Apply via TETO; or online TAC at niaspeedy.immigration.gov.tw",
+        "hours": null,
+        "map_url": null,
+        "apply_url": "https://niaspeedy.immigration.gov.tw/nia_southeast/"
+      },
+      "notes": {
+        "en": "Two paths: (1) FREE online Travel Authorization Certificate (TAC), 14 days, if you hold a valid or recently-expired (within 10 yrs) visa/residence from the US, Canada, UK, EU/Schengen, Australia, NZ, Japan, or South Korea. (2) Otherwise a paid visitor visa from TETO.",
+        "my": "လမ်းကြောင်း ၂ ခု: (၁) US၊ ကနေဒါ၊ UK၊ EU/Schengen၊ ဩစတြေးလျ၊ NZ၊ ဂျပန် သို့မဟုတ် တောင်ကိုရီးယားမှ တရားဝင်/(၁၀ နှစ်အတွင်း) ဗီဇာ/နေထိုင်ခွင့်ရှိပါက အခမဲ့ အွန်လိုင်း TAC (ရက် ၁၄)။ (၂) မဟုတ်ပါက TETO မှ အခပေးဗီဇာ။"
+      },
+      "source": {
+        "name": "Bureau of Consular Affairs, Taiwan (BOCA)",
+        "url": "https://www.boca.gov.tw/np-152-2.html"
+      },
+      "last_verified": "2026-08-19",
+      "sub_type": "conditional_authorization"
+    },
+    {
+      "country_code": "CN",
+      "country_name": {
+        "en": "China",
+        "my": "တရုတ်"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 30,
+      "cost": {
+        "required": true,
+        "amount_usd": 60,
+        "local_currency": "MMK",
+        "amount_local": null
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Completed application form + passport photo",
+          "my": "ဖြည့်စွက်ပြီး လျှောက်လွှာနှင့် ပတ်စပို့ဓာတ်ပုံ"
+        },
+        {
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+        },
+        {
+          "en": "Travel itinerary, flight and hotel bookings",
+          "my": "ခရီးစဉ်၊ လေယာဉ်နှင့် ဟိုတယ်ကြိုတင်မှာယူမှု"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Chinese Embassy Visa Application Service Center, Yangon",
+          "my": "တရုတ်သံရုံး ဗီဇာလျှောက်လွှာဌာန၊ ရန်ကုန်"
+        },
+        "address": "Yangon (see China visa center site for exact address)",
+        "hours": "Mon–Fri (check site)",
+        "map_url": null,
+        "apply_url": "https://bio.visaforchina.cn/"
+      },
+      "notes": {
+        "en": "A tourist visa (L visa) is required. Apply at the Chinese Visa Application Service Center in Yangon. Fees and processing vary; confirm current rates.",
+        "my": "ခရီးသွားဗီဇာ (L ဗီဇာ) လိုအပ်သည်။ ရန်ကုန်ရှိ တရုတ်ဗီဇာလျှောက်လွှာဌာနတွင် လျှောက်ထားပါ။ ကြေးနှင့် ဆောင်ရွက်ချိန် ကွဲပြားနိုင်၊ လက်ရှိနှုန်းအတည်ပြုပါ။"
+      },
+      "source": {
+        "name": "Chinese Visa Application Service Center",
+        "url": "https://bio.visaforchina.cn/"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "MO",
+      "country_name": {
+        "en": "Macau",
+        "my": "မကာအို"
+      },
+      "visa_type": "evisa",
+      "visa_category": "tourist",
+      "allowed_stay_days": 30,
+      "cost": {
+        "required": true,
+        "amount_usd": 0,
+        "local_currency": "MMK",
+        "amount_local": null
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Digital passport photo",
+          "my": "ဒစ်ဂျစ်တယ် ပတ်စပို့ဓာတ်ပုံ"
+        },
+        {
+          "en": "Valid email + card payment",
+          "my": "အီးမေးလ်နှင့် ကတ်ဖြင့်ငွေပေးချေမှု"
+        },
+        {
+          "en": "Proof of onward/return travel",
+          "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Online e-visa application",
+          "my": "အွန်လိုင်း e-visa လျှောက်လွှာ"
+        },
+        "address": null,
+        "hours": null,
+        "map_url": null,
+        "apply_url": null
+      },
+      "notes": {
+        "en": "Visa-free / visa-on-arrival access is generally available to Myanmar passport holders for short tourist stays. Confirm current rules before travel.",
+        "my": "မြန်မာပတ်စပို့ကိုင်ဆောင်သူများ ခရီးသွားရေတိုနေထိုင်မှုအတွက် ဗီဇာမလို/ဆိုက်ရောက်ဗီဇာ ရရှိနိုင်သည်။ ခရီးမသွားမီ လက်ရှိစည်းမျဉ်းအတည်ပြုပါ။"
+      },
+      "source": {
+        "name": "Macao Public Security Police",
+        "url": "https://www.fsm.gov.mo/psp/eng/"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "US",
+      "country_name": {
+        "en": "United States",
+        "my": "အမေရိကန်"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 180,
+      "cost": {
+        "required": true,
+        "amount_usd": 185,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Non-refundable MRV application fee (~$185 for B-1/B-2 as of 2026). A separate visa issuance/reciprocity fee may apply.",
+          "my": "ပြန်မအမ်းသော MRV လျှောက်လွှာကြေး (~$185)။ သီးခြား ဗီဇာထုတ်ပေးကြေး ရှိနိုင်သည်။"
+        }
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "DS-160 confirmation + photo",
+          "my": "DS-160 အတည်ပြုချက်နှင့် ဓာတ်ပုံ"
+        },
+        {
+          "en": "Visa interview appointment",
+          "my": "ဗီဇာအင်တာဗျူး ချိန်းဆိုမှု"
+        },
+        {
+          "en": "Proof of funds and ties to Myanmar",
+          "my": "ငွေကြေးနှင့် မြန်မာနှင့်ဆက်နွှယ်မှု အထောက်အထား"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "U.S. Embassy Rangoon (Yangon) — interview required",
+          "my": "အမေရိကန်သံရုံး ရန်ကုန် — အင်တာဗျူးလိုအပ်"
+        },
+        "address": "110 University Avenue, Kamayut Township, Yangon",
+        "hours": "By appointment (check embassy site)",
+        "map_url": null,
+        "apply_url": "https://mm.usembassy.gov/visas/"
+      },
+      "notes": {
+        "en": "A B-1/B-2 visitor visa is required, with an in-person interview at the U.S. Embassy in Yangon. Fee ~$185 (MRV fee). Approval is at the consular officer's discretion; apply well in advance.",
+        "my": "B-1/B-2 ဧည့်သည်ဗီဇာ လိုအပ်ပြီး ရန်ကုန်ရှိ အမေရိကန်သံရုံးတွင် လူကိုယ်တိုင် အင်တာဗျူးရှိသည်။ ကြေး ~$185။ ခွင့်ပြုမှုသည် ကွန်ဆူလာအရာရှိ၏ ဆုံးဖြတ်ချက်အပေါ်မူတည်၊ ကြိုတင်လျှောက်ထားပါ။"
+      },
+      "source": {
+        "name": "U.S. Embassy in Myanmar",
+        "url": "https://mm.usembassy.gov/visas/"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "FR",
+      "country_name": {
+        "en": "France",
+        "my": "ပြင်သစ်"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 98,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
+          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
+        }
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Schengen visa application + photo",
+          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
+        },
+        {
+          "en": "Travel medical insurance (min €30,000)",
+          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
+        },
+        {
+          "en": "Flight + hotel bookings, proof of funds",
+          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Relevant embassy / VFS Global, Yangon",
+          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
+        },
+        "address": "Apply via the destination country's embassy or VFS in Yangon",
+        "hours": null,
+        "map_url": null,
+        "apply_url": null
+      },
+      "notes": {
+        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
+        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
+      },
+      "source": {
+        "name": "European Commission — Schengen visa info",
+        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
+      },
+      "last_verified": "2026-08-19",
+      "sub_type": "schengen_type_c"
+    },
+    {
+      "country_code": "DE",
+      "country_name": {
+        "en": "Germany",
+        "my": "ဂျာမနီ"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 98,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
+          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
+        }
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Schengen visa application + photo",
+          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
+        },
+        {
+          "en": "Travel medical insurance (min €30,000)",
+          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
+        },
+        {
+          "en": "Flight + hotel bookings, proof of funds",
+          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Relevant embassy / VFS Global, Yangon",
+          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
+        },
+        "address": "Apply via the destination country's embassy or VFS in Yangon",
+        "hours": null,
+        "map_url": null,
+        "apply_url": null
+      },
+      "notes": {
+        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
+        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
+      },
+      "source": {
+        "name": "European Commission — Schengen visa info",
+        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
+      },
+      "last_verified": "2026-08-19",
+      "sub_type": "schengen_type_c"
+    },
+    {
+      "country_code": "IT",
+      "country_name": {
+        "en": "Italy",
+        "my": "အီတလီ"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 98,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
+          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
+        }
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Schengen visa application + photo",
+          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
+        },
+        {
+          "en": "Travel medical insurance (min €30,000)",
+          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
+        },
+        {
+          "en": "Flight + hotel bookings, proof of funds",
+          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Relevant embassy / VFS Global, Yangon",
+          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
+        },
+        "address": "Apply via the destination country's embassy or VFS in Yangon",
+        "hours": null,
+        "map_url": null,
+        "apply_url": null
+      },
+      "notes": {
+        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
+        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
+      },
+      "source": {
+        "name": "European Commission — Schengen visa info",
+        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
+      },
+      "last_verified": "2026-08-19",
+      "sub_type": "schengen_type_c"
+    },
+    {
+      "country_code": "ES",
+      "country_name": {
+        "en": "Spain",
+        "my": "စပိန်"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 98,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
+          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
+        }
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Schengen visa application + photo",
+          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
+        },
+        {
+          "en": "Travel medical insurance (min €30,000)",
+          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
+        },
+        {
+          "en": "Flight + hotel bookings, proof of funds",
+          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Relevant embassy / VFS Global, Yangon",
+          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
+        },
+        "address": "Apply via the destination country's embassy or VFS in Yangon",
+        "hours": null,
+        "map_url": null,
+        "apply_url": null
+      },
+      "notes": {
+        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
+        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
+      },
+      "source": {
+        "name": "European Commission — Schengen visa info",
+        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
+      },
+      "last_verified": "2026-08-19",
+      "sub_type": "schengen_type_c"
+    },
+    {
+      "country_code": "NL",
+      "country_name": {
+        "en": "Netherlands",
+        "my": "နယ်သာလန်"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 98,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
+          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
+        }
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Schengen visa application + photo",
+          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
+        },
+        {
+          "en": "Travel medical insurance (min €30,000)",
+          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
+        },
+        {
+          "en": "Flight + hotel bookings, proof of funds",
+          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Relevant embassy / VFS Global, Yangon",
+          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
+        },
+        "address": "Apply via the destination country's embassy or VFS in Yangon",
+        "hours": null,
+        "map_url": null,
+        "apply_url": null
+      },
+      "notes": {
+        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
+        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
+      },
+      "source": {
+        "name": "European Commission — Schengen visa info",
+        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
+      },
+      "last_verified": "2026-08-19",
+      "sub_type": "schengen_type_c"
+    },
+    {
+      "country_code": "CH",
+      "country_name": {
+        "en": "Switzerland",
+        "my": "ဆွစ်ဇာလန်"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 98,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
+          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
+        }
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Schengen visa application + photo",
+          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
+        },
+        {
+          "en": "Travel medical insurance (min €30,000)",
+          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
+        },
+        {
+          "en": "Flight + hotel bookings, proof of funds",
+          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Relevant embassy / VFS Global, Yangon",
+          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
+        },
+        "address": "Apply via the destination country's embassy or VFS in Yangon",
+        "hours": null,
+        "map_url": null,
+        "apply_url": null
+      },
+      "notes": {
+        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
+        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
+      },
+      "source": {
+        "name": "European Commission — Schengen visa info",
+        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
+      },
+      "last_verified": "2026-08-19",
+      "sub_type": "schengen_type_c"
+    },
+    {
+      "country_code": "GR",
+      "country_name": {
+        "en": "Greece",
+        "my": "ဂရိ"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 98,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Schengen short-stay visa fee ~€90 (≈ $98). Service fees may apply at VFS.",
+          "my": "Schengen ရေတိုဗီဇာကြေး ~€90 (≈ $98)။ VFS ဝန်ဆောင်ခ ရှိနိုင်သည်။"
+        }
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Schengen visa application + photo",
+          "my": "Schengen ဗီဇာလျှောက်လွှာနှင့် ဓာတ်ပုံ"
+        },
+        {
+          "en": "Travel medical insurance (min €30,000)",
+          "my": "ခရီးသွားဆေးဘက်အာမခံ (အနည်းဆုံး €၃၀,၀၀၀)"
+        },
+        {
+          "en": "Flight + hotel bookings, proof of funds",
+          "my": "လေယာဉ်+ဟိုတယ် ကြိုတင်မှာယူမှု၊ ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Relevant embassy / VFS Global, Yangon",
+          "my": "သက်ဆိုင်ရာသံရုံး / VFS Global၊ ရန်ကုန်"
+        },
+        "address": "Apply via the destination country's embassy or VFS in Yangon",
+        "hours": null,
+        "map_url": null,
+        "apply_url": null
+      },
+      "notes": {
+        "en": "A Schengen tourist (Type C) visa is required. Apply at the relevant embassy/VFS in Yangon (or the main destination country's mission). Fee ~€90. Covers all Schengen countries for up to 90 days in any 180-day period.",
+        "my": "Schengen ခရီးသွား (Type C) ဗီဇာ လိုအပ်သည်။ ရန်ကုန်ရှိ သက်ဆိုင်ရာသံရုံး/VFS တွင် လျှောက်ထားပါ။ ကြေး ~€90။ ရက် ၁၈၀ အတွင်း ရက် ၉၀ အထိ Schengen နိုင်ငံအားလုံးအကျုံးဝင်။"
+      },
+      "source": {
+        "name": "European Commission — Schengen visa info",
+        "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"
+      },
+      "last_verified": "2026-08-19",
+      "sub_type": "schengen_type_c"
+    },
+    {
+      "country_code": "GB",
+      "country_name": {
+        "en": "United Kingdom",
+        "my": "ယူကေ"
+      },
+      "visa_type": "visa_required",
+      "visa_category": "tourist",
+      "allowed_stay_days": 180,
+      "cost": {
+        "required": true,
+        "amount_usd": 130,
+        "local_currency": "MMK",
+        "amount_local": null,
+        "note": {
+          "en": "Standard Visitor visa ~£115 (≈ $130) for a 6-month visit. Longer multi-year visas cost more.",
+          "my": "Standard Visitor ဗီဇာ ~£115 (≈ $130) (၆ လ)။ နှစ်ရှည်ဗီဇာ ပိုများ။"
+        }
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Completed application form + passport photo",
+          "my": "ဖြည့်စွက်ပြီး လျှောက်လွှာနှင့် ပတ်စပို့ဓာတ်ပုံ"
+        },
+        {
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+        },
+        {
+          "en": "Travel itinerary, flight and hotel bookings",
+          "my": "ခရီးစဉ်၊ လေယာဉ်နှင့် ဟိုတယ်ကြိုတင်မှာယူမှု"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "UK Visa Application Centre (VFS Global), Yangon",
+          "my": "UK ဗီဇာလျှောက်လွှာဌာန (VFS Global)၊ ရန်ကုန်"
+        },
+        "address": "Yangon (see UK VFS site for exact address)",
+        "hours": "Mon–Fri (check site)",
+        "map_url": null,
+        "apply_url": "https://www.gov.uk/standard-visitor"
+      },
+      "notes": {
+        "en": "A Standard Visitor visa is required. Apply online then attend the UK Visa Application Centre (VFS Global) in Yangon for biometrics. Fee ~£115 for up to 6 months.",
+        "my": "Standard Visitor ဗီဇာ လိုအပ်သည်။ အွန်လိုင်းလျှောက်ပြီး ရန်ကုန်ရှိ UK ဗီဇာဌာန (VFS Global) တွင် ဇီဝမက်ထရစ်အတွက် သွားပါ။ ကြေး ~£115 (၆ လအထိ)။"
+      },
+      "source": {
+        "name": "UK Government — Standard Visitor visa",
+        "url": "https://www.gov.uk/standard-visitor"
+      },
+      "last_verified": "2026-08-19",
+      "sub_type": "standard_visitor"
+    },
+    {
+      "country_code": "AL",
+      "country_name": {
+        "en": "Albania",
+        "my": "အယ်လ်ဘေးနီးယား"
+      },
+      "visa_type": "evisa",
+      "visa_category": "tourist",
+      "allowed_stay_days": 90,
+      "cost": {
+        "required": true,
+        "amount_usd": 0,
+        "local_currency": "MMK",
+        "amount_local": null
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Digital passport photo",
+          "my": "ဒစ်ဂျစ်တယ် ပတ်စပို့ဓာတ်ပုံ"
+        },
+        {
+          "en": "Valid email + card payment",
+          "my": "အီးမေးလ်နှင့် ကတ်ဖြင့်ငွေပေးချေမှု"
+        },
+        {
+          "en": "Proof of onward/return travel",
+          "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
+        }
+      ],
+      "application": {
+        "channel": {
+          "en": "Online e-visa application",
+          "my": "အွန်လိုင်း e-visa လျှောက်လွှာ"
+        },
+        "address": null,
+        "hours": null,
+        "map_url": null,
+        "apply_url": "https://e-visa.al/"
+      },
+      "notes": {
+        "en": "An e-visa is available online. (Visa-free if you hold a valid multiple-entry Schengen, UK, or US visa.) Confirm current rules.",
+        "my": "အွန်လိုင်း e-visa ရရှိနိုင်သည်။ (တရားဝင် Schengen၊ UK သို့မဟုတ် US ဗီဇာ (အကြိမ်များဝင်) ရှိပါက ဗီဇာမလို။) လက်ရှိစည်းမျဉ်းအတည်ပြုပါ။"
+      },
+      "source": {
+        "name": "Republic of Albania e-Visa",
+        "url": "https://e-visa.al/"
+      },
+      "last_verified": "2026-08-19"
+    },
+    {
+      "country_code": "RU",
+      "country_name": {
+        "en": "Russia",
+        "my": "ရုရှား"
+      },
+      "visa_type": "visa_free",
+      "visa_category": "tourist",
+      "allowed_stay_days": 30,
+      "cost": {
+        "required": false,
+        "amount_usd": 0,
+        "local_currency": null,
+        "amount_local": 0
+      },
+      "extra_requirements": [
+        {
+          "en": "Passport valid 6 months beyond stay",
+          "my": "နေထိုင်မည့်ကာလထက် ၆ လ ပိုမိုသက်တမ်းရှိသော ပတ်စပို့"
+        },
+        {
+          "en": "Proof of onward/return travel",
+          "my": "ဆက်လက်/ပြန်လာမည့် ခရီးအထောက်အထား"
+        },
+        {
+          "en": "Proof of sufficient funds",
+          "my": "လုံလောက်သော ငွေကြေးအထောက်အထား"
+        }
+      ],
+      "application": null,
+      "notes": {
+        "en": "Visa-free up to 30 days under the Russia–Myanmar mutual visa exemption agreement (effective 27 Jan 2026), for ordinary passport holders travelling for tourism. Does not cover study, work, or residency.",
+        "my": "ရုရှား–မြန်မာ အပြန်အလှန်ဗီဇာကင်းလွတ်ခွင့် သဘောတူညီချက်အရ (၂၀၂၆ ဇန်နဝါရီ ၂၇ မှ) သာမန်ပတ်စပို့ ခရီးသွားအတွက် ရက် ၃၀ အထိ ဗီဇာမလို။ ပညာသင်၊ အလုပ်၊ အခြေချရန် မအကျုံးဝင်ပါ။"
+      },
+      "source": {
+        "name": "Myanmar Ministry of Information / Russian MFA",
         "url": "https://www.moi.gov.mm/moi:eng/news/20107"
       },
       "last_verified": "2026-08-19"
